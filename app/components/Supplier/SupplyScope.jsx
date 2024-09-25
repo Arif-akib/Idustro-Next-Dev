@@ -1,5 +1,4 @@
 import Image from "next/image";
-
 import React, { useRef, useState } from "react";
 
 import pow1 from "/public/images/service/Energy-450x500.jpg";

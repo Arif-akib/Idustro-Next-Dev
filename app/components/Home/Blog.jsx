@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from 'next/link'
 
 import React, { useRef, useState } from "react";
 
@@ -164,7 +165,13 @@ export default function HomeBlog() {
           </div>
         </div>
 
-        <BlogCard contents={contents} swiperRef={ swiperRef} />
+        <BlogCard contents={contents} swiperRef={swiperRef} />
+        <div className="relative z-20 px-[10%] flex justify-center mt-10">
+          <button className="w-[120px] h-[45px] rounded-md shadow-md primary-background text-white font-bold hover:scale-110 duration-500">
+            <Link href="/blog">View All</Link>
+        </button>
+        </div>
+       
       </div>
     </>
   );
