@@ -72,22 +72,26 @@ export default function Portfolio() {
         text: 'Our Partners',
         sub:'Our team of engineers and technicians are professionally trained by the Firm. In parallel with the repair & maintenance of pumps on floating vehicles, we are truly reliable pump doctors.',
         members : [
-            {
+          {
+              id:1,
               img: p1,
               heading: "Amy Dasliva",
               text: "Electrical Engineer",
             },
-            {
+          {
+              id:2,
               img: p2,
               heading: "KP. Jackson",
               text: "Electrical Engineer",
             },
-            {
+          {
+              id:3,
                 img: p3,
                 heading: "Rob Miller",
                 text: "Electrical Engineer",
               },
-            {
+          {
+              id:4,
               img: p4,
               heading: "Rob Miller",
               text: "Electrical Engineer",
