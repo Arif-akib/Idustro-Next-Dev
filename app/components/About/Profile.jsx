@@ -63,7 +63,7 @@ export default function AboutProfile() {
           </div>
 
           <div className="grid grid-cols-2 gap-5 mt-5">
-            <div className="p-2 rounded primary-background text-white drop-shadow ">
+            <div className="p-4 rounded primary-background text-white drop-shadow ">
               <h2 className="text-xl font-bold">Head Office:</h2>
               <p>
                 NIECO Nest, 2nd & 3rd Floor, 194 Central Bashabo, Sabujbag,
@@ -76,14 +76,14 @@ export default function AboutProfile() {
                 <span className="font-bold">Fax :</span> +8802-4721 9088
               </p>
             </div>
-            <div className="p-2 rounded primary-background text-white drop-shadow ">
+            <div className="p-4 rounded primary-background text-white drop-shadow ">
               <h2 className="text-xl font-bold">Registered Office :</h2>
               <p>
                 DDL Halima Garden, 72 Central Bashabo, Sabujbag, 4th Floor,
                 Suite #4/A, Dhaka-1214, Bangladesh
               </p>
             </div>
-            <div className="p-2 rounded primary-background text-white drop-shadow ">
+            <div className="p-4 rounded primary-background text-white drop-shadow ">
               <h2 className="text-xl font-bold">hittagong Regional Office :</h2>
               <p>
                 Ambia Legun, Laky Valley Residential Area, Flat No. A-2 (2nd
