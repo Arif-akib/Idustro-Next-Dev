@@ -1,10 +1,10 @@
 export default function AboutProfile() {
   return (
     <>
-      <div className="grid grid-cols-2 gap-10 px-[10%] pt-10">
+      <div className="grid grid-cols-2 gap-10 px-[10%] py-10 bg-[url('/images/background/bg-background.jpg')]">
         <div>
           <h2 className="text-5xl font-bold pt-4">Our Company Profile</h2>
-          <div className="grid grid-cols-2 pt-5 gap-5">
+          <div className="grid grid-cols-2 pt-10 gap-5">
             <div className="flex items-center gap-2 p-2 rounded bg-white drop-shadow">
               <img
                 src="/images/icon/right.png"
