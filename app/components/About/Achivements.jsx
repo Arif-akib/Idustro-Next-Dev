@@ -22,6 +22,7 @@ export default function AboutAchivement() {
             icon: ico,
         },
     ];
+
     return (
         <>
             <div className="px-[10%] pt-20">
