@@ -22,7 +22,7 @@ export default function AboutCompany() {
             Welcome to <span className="primary-color">Industry Company</span>
           </p>
           <h2 className="text-5xl font-bold pt-4">
-            We Are Expert In All Industry Works{" "}
+            We Are Expert In All Industry Works
           </h2>
           <p className="text-gray-500 pt-5">
             As a global player, we can benefit from our overall technical
