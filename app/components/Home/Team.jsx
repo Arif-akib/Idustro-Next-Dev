@@ -5,13 +5,6 @@ import "swiper/css";
 import { Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-import p6 from "/public/images/team/4-400x400.jpg";
-import p5 from "/public/images/team/5-400x400.jpg";
-import p1 from "/public/images/team/team-12-400x400.jpg";
-import p2 from "/public/images/team/team-13-400x400.jpg";
-import p3 from "/public/images/team/team-14-400x400.jpg";
-import p4 from "/public/images/team/team-15-400x400.jpg";
-
 export default function HomeTeam() {
     const swiperRef = useRef();
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -39,35 +32,35 @@ export default function HomeTeam() {
     };
     const contents = [
         {
-            img: p1,
+            img: "/images/team/saiful-islam.jpg",
+            heading: "Saiful Islam",
+            text: "Chairman",
+        },
+        {
+            img: "/images/team/abdulla-muzahid.jpg",
+            heading: "Abdulla Muzahid",
+            text: "Director",
+        },
+        {
+            img: "/images/team/faisal-kabir.jpg",
+            heading: "Faisal Kabir",
+            text: "Managing Director",
+        },
+        {
+            img: "/images/team/abdullah-munir.jpg",
             heading: "Abdullah Al Munir",
             text: "Mechanical Engineer",
         },
         {
-            img: p2,
+            img: "/images/team/kamrul-islam.jpg",
             heading: "Kamrul Islam",
             text: "Electrical Engineer",
         },
 
         {
-            img: p4,
+            img: "/images/team/shakib-sarker.jpg",
             heading: "Md. Sakib Sarker",
             text: "Civil Engineer",
-        },
-        {
-            img: p6,
-            heading: "Alfread Bonaport",
-            text: "Electrical Engineer",
-        },
-        {
-            img: p5,
-            heading: "Ashisha Sudra",
-            text: "Marketing",
-        },
-        {
-            img: p3,
-            heading: "Engineer",
-            text: "Electrical Engineer",
         },
     ];
     return (
@@ -161,7 +154,9 @@ export default function HomeTeam() {
                                         <div className="relative">
                                             <Image
                                                 src={content.img}
-                                                alt=""
+                                                alt={content.heading}
+                                                width={600}
+                                                height={600}
                                                 className="grayscale group-hover:grayscale-0 duration-500"
                                             />
                                             <div className="absolute top-0 left-[-10px] h-full flex flex-col gap-2 justify-center ">
