@@ -33,7 +33,7 @@ export default function BannerGrid() {
   ];
   return (
     <>
-      <div className="text-white grid grid-cols-3 px-[10%] gap-10 mt-16">
+      <div className="text-white grid grid-cols-3 px-[10%] gap-10 mt-0 2xl:mt-16">
         {contents.map((content, index) => (
           <div key={index} className="relative group">
             <div className="bg-black p-10 rounded-md relative">
