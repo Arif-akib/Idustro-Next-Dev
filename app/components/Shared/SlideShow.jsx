@@ -29,7 +29,7 @@ export default function SlideShow({ portfolio }) {
     return (
         <>
             <div className="flex relative pb-16 mb-16">
-                <div className="h-[650px] w-[75%] relative">
+                <div className="h-[700px] w-[65%] relative">
                     {contents.map((content, index) => (
                         <div key={index} className="">
                             <Image
@@ -78,9 +78,9 @@ export default function SlideShow({ portfolio }) {
                         </div>
                     ))}
                 </div>
-                <div className="w-[25%] mt-[-65px] -ml-20">
-                    <div className="bg-black text-white h-[660px]  pt-[60px]  pl-[120px] pr-[40px]">
-                        <h1 className="text-5xl font-semibold">{heading}</h1>
+                <div className="w-[35%] mt-[-65px] -ml-20">
+                    <div className="bg-black text-white h-[700px]  pt-[60px]  pl-[120px] pr-[40px]">
+                        <h1 className="text-5xl font-bold primary-color">{heading}</h1>
                         <div className="py-6 flex flex-col gap-4 mt-4 relative">
                             {contents.map((content, index) => (
                                 <div
@@ -145,7 +145,6 @@ export default function SlideShow({ portfolio }) {
                                     <span>{index <= 9 ? 0 : ""}</span>
                                     {index + 1}
                                     <span>
-                                        {" "}
                                         {index < contents.length - 1 ? "/" : ""}
                                     </span>
                                 </p>

@@ -1,12 +1,14 @@
 "use client";
 
-import AboutAchivement from "/app/components/About/Achivements";
-import AboutApproch from "/app/components/About/Approch";
-import AboutCompany from "/app/components/About/Company";
+import Membership from "/app/components/About/Membership";
+import BusinessScope from "/app/components/About/BusinessScope";
 import Missionvision from "/app/components/About/MissionVision";
 import AboutProfile from "/app/components/About/Profile";
 import Hero from "/app/components/Shared/Hero";
-import AboutClient from "/app/components/Shared/SponsorPartner";
+import Overview from "/app/components/About/Overview"
+import ProductRange from "/app/components/About/ProductRange"
+import CustomerNeed from "/app/components/About/CustomerNeeds"
+import AboutTeam from "/app/components/About/Team"
 
 import bg1 from "/public/images/client/client-1_03.png";
 import bg2 from "/public/images/client/client-2.png";
@@ -37,14 +39,14 @@ export default function About() {
     return (
         <>
             <Hero HeroLable={HeroLable} bread={bread} />
+            <Overview/>
+            <ProductRange />
+            <CustomerNeed />
             <AboutProfile />
+            <AboutTeam/>
             <Missionvision />
-            <AboutAchivement />
-            <AboutCompany />
-            <AboutApproch />
-            <div className="bg-[url('/app/assets/images/background/bg-testi-2.png')] bg-no-repeat bg-cover">
-                <AboutClient Headline={Headline} contents={contents} />
-            </div>
+            <Membership />
+            <BusinessScope />
         </>
     );
 }

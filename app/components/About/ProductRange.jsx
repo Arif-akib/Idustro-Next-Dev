@@ -16,7 +16,7 @@ import metal1 from "/public/images/icon/excavator.png";
 import petrol1 from "/public/images/icon/factory2.png";
 import power1 from "/public/images/icon/gear.png";
 
-export default function HomeService() {
+export default function ProductRange() {
     const swiperRef = useRef();
     const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -46,55 +46,46 @@ export default function HomeService() {
             icon: power1,
             bg: power2,
             heading: "Fertilizer",
-            subtext: "Fertilizer Industry Support",
-            sub: "we provide specialized services tailored to the fertilizer industry, ensuring that our clients receive comprehensive support in equipment supply, maintenance, and technical expertise...",
+            subtext: "Fertilizer Industry Solutions",
+            sub: "We provide essential equipment and services tailored to the fertilizer sector, including blending systems, conveyors, and application machinery that support efficient production processes.",
         },
         {
             icon: machanical1,
             bg: machanical2,
             heading: "Power Plant",
-            subtext: "Power Industry Support",
-            sub: "We offer a full suite of services tailored specifically for the power plant industry, ensuring the seamless operation of facilities across Bangladesh...",
+            subtext: "Power Plant Equipment",
+            sub: "Our extensive range of products for power generation includes turbines, generators, transformers, and auxiliary systems designed to enhance the efficiency and reliability of power plants.",
         },
         {
             icon: petrol1,
             bg: petrol2,
             heading: "Gas Field",
-            subtext: "Gas Field Support",
-            sub: "we deliver specialized services designed for the gas field industry, ensuring the efficient and safe extraction and processing of natural gas...",
+            subtext: "Gas Field Equipment",
+            sub: "We supply a variety of crucial equipment for gas exploration and production, including compressors, separators, and other specialized tools necessary for the oil and gas sector.",
         },
         {
             icon: petrol1,
             bg: petrol2,
             heading: "Refinary",
-            subtext: "Refinary Industry Support",
-            sub: "We provide dedicated services tailored for the refinery industry, ensuring the efficient processing of petroleum products",
+            subtext: "Refinary Solutions",
+            sub: "Our offerings for the refining industry include pumps, valves, heat exchangers, and other essential equipment to ensure smooth and efficient refinery operations.",
         },
         {
-            icon: metal1,
+            icon: power1,
             bg: metal2,
             heading: "Water Treatment",
-            subtext: "Water Treatment Industry Support",
-            sub: "We offer specialized services for the water treatment and water plant industry, focusing on enhancing the quality and efficiency of water supply and management...",
+            subtext: "Water Treatment Systems",
+            sub: "We import and provide a wide range of equipment and solutions for water treatment plants, focusing on safe and efficient water purification and management.",
         },
     ];
     return (
         <>
-            <div className="mt-20 pb-[140px] relative">
-                <div className="flex flex-col items-center justify-center pt-[100px] bg-[url('/images/background/bg-background.jpg')] pb-[200px]">
-                    <p className="text-[#FA4318] text-lg font-bold mb-[-70px]">
-                        Our Awesome Services
-                    </p>
-                    <h4 className="text-transparent text-[110px] font-bold font-outline-2">
-                        Services
-                    </h4>
-                    <h1 className="text-5xl font-bold w-1/2 text-center mt-[-70px]">
-                        Building a more competitive business sectors
-                    </h1>
-                    <p className="h-[2px] w-[60px] bg-[#FA4318] mt-2 rounded-md"></p>
-                </div>
-
-                <div className="px-[10%] mt-[-150px] relative">
+            <div className="pt-10 pb-[40px] relative bg-gray-100">
+                <h1 className="text-5xl font-bold w-1/2 text-center mb-5 mx-auto">
+                Our Product Range
+                </h1>
+                <p className="w-1/2 text-center mb-[40px] mx-auto">At NIECO Ltd., we import and supply a diverse range of industrial products designed to meet the specific requirements of various sectors. Our primary offerings include:</p>
+                <div className="px-[10%] relative">
                     <Swiper
                         slidesPerView={3}
                         spaceBetween={20}
@@ -111,7 +102,7 @@ export default function HomeService() {
                                     key={index}
                                     className="mb-5 overflow-hidden"
                                 >
-                                    <div className="group relative size-[100%] pb-5 h-[250px] w-full">
+                                    <div className="group relative size-[100%] pb-5 h-[350px] w-full">
                                         <Image
                                             src={content.bg}
                                             alt=""
@@ -122,11 +113,11 @@ export default function HomeService() {
                                                 src={content.icon}
                                                 alt=""
                                                 className={
-                                                    index % 3 == 0
+                                                    index % 3 == 1
                                                         ? "size-[90px] p-5 shadow-md bg-[#0099E2]"
-                                                        : "" || index % 3 == 1
-                                                        ? "size-[90px] p-5 shadow-md bg-[#FA4318]"
                                                         : "" || index % 3 == 2
+                                                        ? "size-[90px] p-5 shadow-md bg-[#FA4318]"
+                                                        : "" || index % 3 == 0
                                                         ? "size-[90px] p-5 shadow-md icon-bg bg-[#28Bc00]"
                                                         : ""
                                                 }
@@ -175,7 +166,7 @@ export default function HomeService() {
                                                 <p className="text-2xl font-bold hover:primary-color">
                                                     {content.heading}
                                                 </p>
-                                                <p className=" line-clamp-3">{content.sub}</p>
+                                                <p className="">{content.sub}</p>
                                                 <button
                                                     className={
                                                         index % 3 == 0
@@ -254,11 +245,7 @@ export default function HomeService() {
                         </div>
                     </Swiper>
                 </div>
-                <Image
-                    src={bg1}
-                    alt=""
-                    className="absolute bottom-5 h-[250px] bg-animate1"
-                />
+                <p className="w-1/2 text-center mx-auto mt-5">Our comprehensive product range ensures that we can meet the unique demands of each industry, delivering solutions that enhance productivity and operational efficiency.</p>
             </div>
         </>
     );

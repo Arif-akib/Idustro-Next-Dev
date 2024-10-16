@@ -155,7 +155,7 @@ export default function HomeProduct() {
                                             <p className="size-[180px] rounded-full primary-background absolute -z-10 top-0 group-hover:top-[-15px] duration-300 ease-linear"></p>
                                         </div>
 
-                                        <div className="relative w-80">
+                                        <div className="relative w-full">
                                             <div className="text-center bg-white px-5 rounded-xl pt-[80px] shadow-lg relative overflow-hidden">
                                                 <h2 className="capitalize font-bold text-2xl line-clamp-2 pb-2">
                                                     {content.heading}

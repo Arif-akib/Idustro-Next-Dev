@@ -1,4 +1,4 @@
-export default function AboutCompany() {
+export default function BusinessScope() {
   return (
     <>
       <div className="py-20 pb-26 px-[10%] flex gap-10 bg-[url('/images/background/bg-bottom-portfolio-content.png')] bg-right bg-no-repeat overflow-hidden relative">
@@ -13,21 +13,19 @@ export default function AboutCompany() {
             alt=""
             className="rounded-full size-full aspect-auto object-cover relative z-20"
           />
-          <p className="bg-[#b73719] size-full rounded-full absolute -bottom-[55%] right-0 text-center flex justify-center items-center text-7xl font-bold uppercase text-[#ffffff28] group-hover:text-white duration-500">
-            About
+          <p className="bg-[#b73719] size-full rounded-full absolute -bottom-[55%] right-0 text-center flex justify-center items-center text-5xl font-bold text-[#ffffff41] group-hover:text-white duration-500">
+          Business Scope
           </p>
         </div>
         <div className="w-1/2">
           <p className="text-xl font-bold">
-            Welcome to <span className="primary-color">Industry Company</span>
+            Welcome to <span className="primary-color">NIECO Ltd.</span>
           </p>
           <h2 className="text-5xl font-bold pt-4">
-            We Are Expert In All Industry Works
+          Scope of Business
           </h2>
           <p className="text-gray-500 pt-5">
-            As a global player, we can benefit from our overall technical
-            experience and resources and take on large and complex assignments,
-            wherever in the world the needs arise.
+          Naahar Industrial Equipments Co. Ltd. (NIECO Ltd.) operates as a leading local agent, representative, distributor, and service provider across various industrial sectors in Bangladesh. Our expertise spans multiple industries, ensuring that we meet the diverse needs of our clients. The primary areas of focus include:
           </p>
           <div className="grid grid-cols-2 font-bold text-xl pt-5 gap-x-5 gap-y-3">
             <p className="flex items-center gap-2">
@@ -36,7 +34,7 @@ export default function AboutCompany() {
                 alt=""
                 className="size-[24px]"
               />
-              Our Work Growth
+              Fertilizer
             </p>
             <p className="flex items-center gap-2">
               <img
@@ -44,7 +42,7 @@ export default function AboutCompany() {
                 alt=""
                 className="size-[24px]"
               />
-              Our Employee Growth
+              Power Plant
             </p>
             <p className="flex items-center gap-2">
               <img
@@ -52,7 +50,7 @@ export default function AboutCompany() {
                 alt=""
                 className="size-[24px]"
               />
-              1500 Employed
+              Oil & Gas
             </p>
             <p className="flex items-center gap-2">
               <img
@@ -60,7 +58,23 @@ export default function AboutCompany() {
                 alt=""
                 className="size-[24px]"
               />
-              Service Management
+              Chemical & Petrochemical
+            </p>
+            <p className="flex items-center gap-2">
+              <img
+                src="/images/icon/right.png"
+                alt=""
+                className="size-[24px]"
+              />
+              Sugar & Food Processing
+            </p>
+            <p className="flex items-center gap-2">
+              <img
+                src="/images/icon/right.png"
+                alt=""
+                className="size-[24px]"
+              />
+              Refinery
             </p>
           </div>
           <div className="my-10 p-8 rounded-md shadow-md bg-white flex items-center gap-5 group">
@@ -77,9 +91,6 @@ export default function AboutCompany() {
               </p>
             </div>
           </div>
-          <button className="text-white font-bold flex items-center justify-center h-[45px] w-[180px] rounded-full bg-[#1c1c44] hover:primary-background duration-500 shadow-md">
-            Explore More +
-          </button>
         </div>
       </div>
     </>
