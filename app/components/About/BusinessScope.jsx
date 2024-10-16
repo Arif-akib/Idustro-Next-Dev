@@ -1,7 +1,7 @@
 export default function BusinessScope() {
   return (
     <>
-      <div className="py-20 pb-26 px-[10%] flex gap-10 bg-[url('/images/background/bg-bottom-portfolio-content.png')] bg-right bg-no-repeat overflow-hidden relative">
+      <div className="py-20 pb-26 px-[10%] flex items-center gap-10 bg-[url('/images/background/bg-bottom-portfolio-content.png')] bg-right bg-no-repeat overflow-hidden relative">
         <img
           src="/images/background/image-holder.png"
           alt=""
