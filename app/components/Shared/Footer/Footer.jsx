@@ -120,9 +120,7 @@ export default function Footer() {
                     </div>
                 </div>
                 <p className="text-white text-center font-[400] py-5">
-                    © 2022 Industo –{" "}
-                    <span className="primary-color">CaseThemes</span>. All
-                    rights reserved.
+                    © 2024 NEICO – All rights reserved.
                 </p>
             </div>
         </>

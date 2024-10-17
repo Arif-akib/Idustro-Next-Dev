@@ -67,7 +67,7 @@ export default function Career() {
         </h1>
         <div className="mt-20 grid grid-cols-4 gap-y-16 gap-x-5">
                   {contents.map((content, index) => (
-               <div key={index} className="w-full p-5 rounded-md shadow-md flex flex-col items-center justify-center bg-gradient-to-r from-[#a8003ee1] to-[#f30031ea] group">
+               <div key={index} className="w-full p-5 rounded-md shadow-md flex flex-col items-center justify-center bg-gradient-to-r from-[#1900a8e1] to-[#0061f3ea] group">
                <div className="size-[80px] p-4 bg-white rounded-full flex items-center justify-center border-[3px] border-[#203b70] -mt-14 group-hover:scale-animate">
                  <Image src={content.icon} alt="" className=" size-[40px]" />
                </div>

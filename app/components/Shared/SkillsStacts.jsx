@@ -22,7 +22,7 @@ export default function SkillStacts({ contents }) {
             </svg>
           </div>
           <div className="w-1/2">
-                    <p className="primary-color text-xl font-bold">{ contents.text}</p>
+                    <p className="text-white text-xl font-bold">{ contents.text}</p>
             <h2 className="text-5xl font-bold text-white py-3 pb-5">
               {contents.heading}
             </h2>

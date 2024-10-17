@@ -13,7 +13,7 @@ export default function BusinessScope() {
             alt=""
             className="rounded-full size-full aspect-auto object-cover relative z-20"
           />
-          <p className="bg-[#b73719] size-full rounded-full absolute -bottom-[55%] right-0 text-center flex justify-center items-center text-5xl font-bold text-[#ffffff41] group-hover:text-white duration-500">
+          <p className="bg-[#211a81] size-full rounded-full absolute -bottom-[55%] right-0 text-center flex justify-center items-center text-5xl font-bold text-[#ffffff41] group-hover:text-white duration-500">
           Business Scope
           </p>
         </div>

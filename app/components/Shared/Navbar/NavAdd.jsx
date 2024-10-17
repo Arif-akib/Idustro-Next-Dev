@@ -3,7 +3,7 @@ export default function NavAdd() {
       <>
         <div className="bg-black text-gray-400 px-[10%] h-[55px] flex justify-between items-center">
           <p className="">
-            Welcome to our <span className="text-[#203b70]">Industo</span> Company
+            Welcome to our <span className="text-[#203b70]">NIECO</span> Company
           </p>
           <div className="flex items-center gap-10 justify-between">
             <p className="flex gap-2 items-center">

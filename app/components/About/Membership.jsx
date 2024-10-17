@@ -79,7 +79,7 @@ export default function Membership() {
                 key={index}
                 className="flex items-center gap-5 drop-shadow-xl bg-white group relative"
               >
-                <div className="primary-background flex items-center justify-center border-r-[10px] border-[#ffe0d4] h-[140px] w-[130px] rounded-tr-[40%] rounded-br-[90%]">
+                <div className="primary-background flex items-center justify-center border-r-[10px] border-[#d4d8ff] h-[140px] w-[130px] rounded-tr-[40%] rounded-br-[90%]">
                   <Image
                     src={content.icon}
                     alt=""

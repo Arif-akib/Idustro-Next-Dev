@@ -35,7 +35,7 @@ export default function ContactAddress() {
                         Address.map((content, index) => (
                             <div className="bg-white p-8 rounded-md shadow-md group">
                         <div className="flex gap-5 items-center pb-5">
-                            <div className="p-3 rounded-full bg-red-100">
+                            <div className="p-3 rounded-full bg-blue-100">
                                 <p className="group-hover:animate-ping">{content.img}</p>
                             </div>
                             <div>
