@@ -6,7 +6,7 @@ import Hero from "@/app/components/Home/Hero";
 import HomeProduct from "@/app/components/Home/Product";
 import HomeService from "@/app/components/Home/Service";
 import HomeTeam from "@/app/components/Home/Team";
-import HomePorfolio from "@/app/components/Shared/SlideShow";
+import HomePortfolio from "@/app/components/Shared/SlideShow";
 
 import build from "/public/images/home/bg-slide-home-1.jpg";
 import indus from "/public/images/home/Energy.jpg";
@@ -17,7 +17,7 @@ import cons from "/public/images/home/service-9.jpg";
 
 export default function Home() {
     const portfolio = {
-        heading: "Our Protfolio",
+        heading: "Our Portfolio",
         contents: [
             {
                 img: build,
@@ -74,7 +74,7 @@ export default function Home() {
             <Hero />
             <HomeAbout />
             <HomeService />
-            <HomePorfolio portfolio={portfolio} />
+            <HomePortfolio portfolio={portfolio} />
             <HomeProduct />
             <HomeTeam />
             <HomeContact />

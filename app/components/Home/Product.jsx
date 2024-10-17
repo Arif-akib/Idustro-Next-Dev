@@ -5,20 +5,6 @@ import "swiper/css";
 import { Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-import SheredStar from "../Shared/Star";
-
-import bg1 from "/public/images/background/img-vector1.png";
-import bg3 from "/public/images/background/ite-vector-left.png";
-import bg2 from "/public/images/background/vt-2.png";
-import bg4 from "/public/images/background/vt-5.png";
-
-import drillset from "/public/images/product/drill3-1-150x150.png";
-import gen from "/public/images/product/gen.png";
-import cap from "/public/images/product/item2-1-150x150.png";
-import cut from "/public/images/product/product-4-150x150.jpg";
-import drill2 from "/public/images/product/product-5-1-150x150.png";
-import drill1 from "/public/images/product/product-6-1-150x150.png";
-
 export default function HomeProduct() {
     const swiperRef = useRef();
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -44,9 +30,10 @@ export default function HomeProduct() {
             setCurrentIndex(index);
         }
     };
+
     const contents = [
         {
-            img: gen,
+            img: "/images/product/pump.jpg",
             heading: "Pumps",
             subtext: "generator yato brand",
             oldP: "300.00",
@@ -54,7 +41,7 @@ export default function HomeProduct() {
             star: 3.5,
         },
         {
-            img: cap,
+            img: "/images/product/Boiler.png",
             heading: "Boilers",
             subtext: "Compound",
             oldP: "20.00",
@@ -62,7 +49,7 @@ export default function HomeProduct() {
             star: 3,
         },
         {
-            img: drillset,
+            img: "/images/product/turbine.webp",
             heading: "Turbine",
             subtext: "drill machine",
             oldP: "10.00",
@@ -70,7 +57,7 @@ export default function HomeProduct() {
             star: 4,
         },
         {
-            img: drill1,
+            img: "/images/product/compressor.jpg",
             heading: "Compressors",
             subtext: "coumpound",
             oldP: "20.00",
@@ -78,7 +65,7 @@ export default function HomeProduct() {
             star: 4.5,
         },
         {
-            img: drill2,
+            img: "/images/product/Valve.jpg",
             heading: "Valves",
             subtext: "generator yato brand",
             oldP: "",
@@ -86,7 +73,7 @@ export default function HomeProduct() {
             star: 5,
         },
         {
-            img: cut,
+            img: "/images/product/Heat exchanger.jpg",
             heading: "Heat Exchangers",
             subtext: "compound",
             oldP: "20.00",
@@ -94,7 +81,7 @@ export default function HomeProduct() {
             star: 4.5,
         },
         {
-            img: cut,
+            img: "/images/product/Pressure regulator.jpg",
             heading: "Pressure Regulators",
             subtext: "compound",
             oldP: "20.00",
@@ -107,7 +94,7 @@ export default function HomeProduct() {
             <div className="mt-20 pb-[140px] bg-gray-100 relative">
                 <div className="flex flex-col items-center justify-center pt-[100px] pb-5">
                     <p className="text-[#203b70] text-lg font-bold mb-[-70px] z-20">
-                        Populat products
+                        Popular Products
                     </p>
                     <h4 className="text-transparent text-[110px] font-bold font-outline-2 text-white z-10">
                         Product
@@ -117,13 +104,17 @@ export default function HomeProduct() {
                     </h1>
                     <p className="h-[2px] w-[60px] bg-[#203b70] rounded-md mt-5 z-20"></p>
                     <Image
-                        src={bg1}
-                        alt=""
+                        src={"/images/background/img-vector1.png"}
+                        alt="Nahar industrial Services"
+                        width={500}
+                        height={500}
                         className="absolute top-0 left-[13%]"
                     />
                     <Image
-                        src={bg2}
-                        alt=""
+                        src="/images/background/vt-2.png"
+                        alt="Nahar industrial Services"
+                        width={500}
+                        height={500}
                         className="absolute top-0 right-[10%] bg-animate2"
                     />
                 </div>
@@ -149,8 +140,10 @@ export default function HomeProduct() {
                                         <div className="mb-[-70px] z-10 relative">
                                             <Image
                                                 src={content.img}
-                                                alt=""
-                                                className="size-[180px] rounded-full bg-white p-5 shadow-lg"
+                                                alt={content.title}
+                                                width={600}
+                                                height={600}
+                                                className="size-[180px] rounded-full bg-white p-2 shadow-lg"
                                             />
                                             <p className="size-[180px] rounded-full primary-background absolute -z-10 top-0 group-hover:top-[-15px] duration-300 ease-linear"></p>
                                         </div>
@@ -163,29 +156,7 @@ export default function HomeProduct() {
                                                 <p className="capitalize text-gray-500 text-lg pb-8 border-b line-clamp-1">
                                                     {content.subtext}
                                                 </p>
-                                                <div className="flex justify-between items-center pt-5 pb-[50px]">
-                                                    <p
-                                                        className={
-                                                            content.newP == ""
-                                                                ? "font-semibold"
-                                                                : "font-semibold line-through"
-                                                        }
-                                                    >
-                                                        ${content.oldP}
-                                                    </p>
-                                                    <p
-                                                        className={
-                                                            content.newP == ""
-                                                                ? "hidden"
-                                                                : "text-red-500 font-semibold"
-                                                        }
-                                                    >
-                                                        ${content.newP}
-                                                    </p>
-                                                    <SheredStar
-                                                        content={content}
-                                                    />
-                                                </div>
+
                                                 <div className="text-center bg-black text-white px-5 rounded-xl pt-[80px] shadow-lg absolute top-0 left-0 translate-y-[105%] group-hover:translate-y-0 duration-300 w-full">
                                                     <h2 className="capitalize font-bold text-2xl line-clamp-2 pb-2">
                                                         {content.heading}
@@ -193,39 +164,7 @@ export default function HomeProduct() {
                                                     <p className="capitalize text-gray-500 text-lg pb-8 border-b line-clamp-1">
                                                         {content.subtext}
                                                     </p>
-                                                    <div className="flex justify-between items-center pt-5 pb-[50px]">
-                                                        <p
-                                                            className={
-                                                                content.newP ==
-                                                                ""
-                                                                    ? "font-semibold"
-                                                                    : "font-semibold line-through"
-                                                            }
-                                                        >
-                                                            ${content.oldP}
-                                                        </p>
-                                                        <p
-                                                            className={
-                                                                content.newP ==
-                                                                ""
-                                                                    ? "hidden"
-                                                                    : "text-red-500 font-semibold"
-                                                            }
-                                                        >
-                                                            ${content.newP}
-                                                        </p>
-                                                        <SheredStar
-                                                            content={content}
-                                                        />
-                                                    </div>
                                                 </div>
-                                            </div>
-
-                                            <div className="flex justify-center absolute z-30 -bottom-4 w-full">
-                                                <button className="font-semibold text-white bg-[#203b70] flex gap-3 items-center justify-center h-[45px] w-[160px] rounded uppercase">
-                                                    ADD To cart
-                                                    <i className="fa-solid fa-chevron-right text-sm"></i>
-                                                </button>
                                             </div>
                                         </div>
                                     </div>
@@ -289,13 +228,17 @@ export default function HomeProduct() {
                     </Swiper>
                 </div>
                 <Image
-                    src={bg3}
-                    alt=""
+                    src={"/images/background/ite-vector-left.png"}
+                    alt="Nahar industrial Services"
+                    width={500}
+                    height={500}
                     className="absolute bottom-5 h-[250px] bg-animate1 z-0"
                 />
                 <Image
-                    src={bg4}
-                    alt=""
+                    src="/images/background/vt-5.png"
+                    alt="Nahar industrial Services"
+                    width={500}
+                    height={500}
                     className="absolute bottom-0 right-0 z-0"
                 />
             </div>
