@@ -6,7 +6,7 @@ import g3 from "/public/images/Gallery/gallery-3.jpg";
 import g4 from "/public/images/Gallery/gallery-4.jpg";
 import g5 from "/public/images/Gallery/gallery-5.jpg";
 import g6 from "/public/images/Gallery/gallery-6.jpg";
-import logo from "/public/images/logo/logo-light.png";
+import logo from "/public/images/logo/logo.png";
 
 export default function Footer() {
     return (
