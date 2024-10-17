@@ -40,7 +40,7 @@ export default function Hero() {
     return (
         <>
             <div className="">
-                <div className="h-[990px] relative bg-black">
+                <div className="h-[1200px] sm:h-[990px] relative bg-black">
                     <div className="">
                         {slide.map((image, index) => (
                             <Image
@@ -55,7 +55,7 @@ export default function Hero() {
                             />
                         ))}
                     </div>
-                    <div className="absolute z-30 flex flex-col gap-5 right-5 top-[350px]">
+                    <div className="absolute z-30 hidden md:flex flex-col gap-5 right-5 top-[350px]">
                         <button
                             onClick={slideRight}
                             className="size-[50px] flex items-center justify-center bg-white rounded-3xl hover:bg-[#203b70] group duration-500"
@@ -95,12 +95,12 @@ export default function Hero() {
                                     key={index}
                                     className="text-white relative h-fit"
                                 >
-                                    <div className="absolute z-20 top-[150px] space-y-10 w-1/2 pl-[10%]">
+                                    <div className="absolute z-20 top-[150px] space-y-10 w-full md:w-2/3 xl:w-1/2 pl-[5%] xl:pl-[10%]">
                                         <h1
                                             className={
                                                 index == currentIndex
-                                                    ? "text-6xl font-bold translate-y-0 duration-1000 delay-1000 opacity-100 ease-linear"
-                                                    : "text-6xl font-bold -translate-y-[100%] opacity-0"
+                                                    ? "text-3xl sm:4xl lg:text-6xl font-bold translate-y-0 duration-1000 delay-1000 opacity-100 ease-linear"
+                                                    : "text-3xl sm:4xl lg:text-6xl font-bold -translate-y-[100%] opacity-0"
                                             }
                                         >
                                             {content.heading}

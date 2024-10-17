@@ -1,7 +1,7 @@
 export default function NavAdd() {
     return (
       <>
-        <div className="bg-black text-gray-400 px-[10%] h-[55px] flex justify-between items-center">
+        <div className="bg-black text-gray-400 px-[10%] h-[55px] xl:flex justify-between items-center hidden">
           <p className="">
             Welcome to our <span className="text-[#203b70]">NIECO</span> Company
           </p>
