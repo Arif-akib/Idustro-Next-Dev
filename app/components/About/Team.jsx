@@ -65,7 +65,7 @@ export default function AboutTeam() {
                         <h1 className="text-5xl font-bold mt-[-70px] z-20">
                         Management Team
                         </h1>
-                        <p className="h-[2px] w-[60px] bg-[#FA4318] rounded-md mt-5 z-20"></p>
+                        <p className="h-[2px] w-[60px] primary-background rounded-md mt-5 z-20"></p>
                     </div>
                     <div className="flex gap-3 items-center justify-center">
                         <button
@@ -194,10 +194,10 @@ export default function AboutTeam() {
                                                 </li>
                                             </div>
                                             <p className="h-0 w-0 border-[25px] border-transparent border-r-white border-t-white absolute top-[0px] right-[0px]"></p>
-                                            <p className="h-0 w-0 border-[15px] border-transparent border-r-[#FA4318] border-t-[#FA4318] absolute top-[0px] right-[0px]"></p>
+                                            <p className="h-0 w-0 border-[15px] border-transparent border-r-[#203b70] border-t-[#203b70] absolute top-[0px] right-[0px]"></p>
                                         </div>
                                         <div className="relative shadow-md rounded-b-md pt-5">
-                                            <p className="h-0 w-0 border-[15px] border-transparent border-r-[#FA4318] border-t-[#FA4318] absolute top-[-0px] right-[0px] z-30"></p>
+                                            <p className="h-0 w-0 border-[15px] border-transparent border-r-[#203b70] border-t-[#203b70] absolute top-[-0px] right-[0px] z-30"></p>
                                             <h2 className="capitalize font-bold text-2xl pb-2 text-center">
                                                 {content.heading}
                                             </h2>
@@ -205,7 +205,7 @@ export default function AboutTeam() {
                                                 {content.text}
                                             </p>
                                             <div className="flex justify-center absolute -bottom-4 w-full">
-                                                <button className="font-semibold text-white bg-[#FA4318] flex gap-3 items-center justify-center h-[45px] w-[150px] rounded uppercase">
+                                                <button className="font-semibold text-white primary-background flex gap-3 items-center justify-center h-[45px] w-[150px] rounded uppercase">
                                                     Read More
                                                     <i className="fa-solid fa-chevron-right text-sm"></i>
                                                 </button>

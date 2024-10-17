@@ -69,7 +69,7 @@ export default function Testimonial() {
     <>
       <div className="pt-32 pb-16 relative bg-[url('/images/background/bg-testi-2.png')] bg-cover bg-no-repeat">
         <div className="relative flex flex-col px-[10%] justify-center items-center pb-5">
-          <p className="text-[#FA4318] pb-1 text-lg font-bold ">Testimonial</p>
+          <p className="text-[#203b70] pb-1 text-lg font-bold ">Testimonial</p>
           <h1 className="text-5xl font-bold text-center leading-normal">
             Happy Client Says <br /> About Us
           </h1>

@@ -46,8 +46,8 @@ export default function BannerGrid() {
                                 <h1 className="text-2xl font-bold">
                                     {content.heading}
                                 </h1>
-                                <p className="h-[1px] w-[60px] bg-[#FA4318] mt-2 rounded-md"></p>
-                                <button className="h-[50px] w-[150px] rounded bg-[#FA4318] text-lg font-semibold flex gap-2 items-center justify-center mt-8 mb-16">
+                                <p className="h-[1px] w-[60px] bg-[#203b70] mt-2 rounded-md"></p>
+                                <button className="h-[50px] w-[150px] rounded bg-[#203b70] text-lg font-semibold flex gap-2 items-center justify-center mt-8 mb-16">
                                     Read More{" "}
                                     <i className="fa-solid fa-arrow-right text-sm"></i>
                                 </button>
@@ -68,9 +68,9 @@ export default function BannerGrid() {
                                 <h1 className="text-2xl font-bold">
                                     {content.heading}
                                 </h1>
-                                <p className="h-[1px] w-[60px] bg-[#FA4318] mt-2 rounded-md"></p>
+                                <p className="h-[1px] w-[60px] bg-[#203b70] mt-2 rounded-md"></p>
                                 <p className="mt-8">{content.sub}</p>
-                                <button className="h-[50px] w-[150px] rounded bg-[#FA4318] text-lg font-semibold flex gap-2 items-center justify-center mt-8 mb-16">
+                                <button className="h-[50px] w-[150px] rounded bg-[#203b70] text-lg font-semibold flex gap-2 items-center justify-center mt-8 mb-16">
                                     Read More{" "}
                                     <i className="fa-solid fa-arrow-right text-sm"></i>
                                 </button>

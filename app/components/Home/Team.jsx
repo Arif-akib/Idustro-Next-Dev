@@ -68,7 +68,7 @@ export default function HomeTeam() {
             <div className="pb-16">
                 <div className="flex justify-between items-end pt-[100px] pb-5 px-[10%]">
                     <div className="relative flex flex-col">
-                        <p className="text-[#FA4318] text-lg font-bold mb-[-70px] z-20">
+                        <p className="text-[#203b70] text-lg font-bold mb-[-70px] z-20">
                             Expert team member
                         </p>
                         <h4 className="text-transparent text-[110px] font-bold font-outline-2 z-10 -ml-16">
@@ -77,7 +77,7 @@ export default function HomeTeam() {
                         <h1 className="text-5xl font-bold mt-[-70px] z-20">
                             Our expert team will assist.
                         </h1>
-                        <p className="h-[2px] w-[60px] bg-[#FA4318] rounded-md mt-5 z-20"></p>
+                        <p className="h-[2px] w-[60px] bg-[#203b70] rounded-md mt-5 z-20"></p>
                     </div>
                     <div className="flex gap-3 items-center justify-center">
                         <button
@@ -206,10 +206,10 @@ export default function HomeTeam() {
                                                 </li>
                                             </div>
                                             <p className="h-0 w-0 border-[25px] border-transparent border-r-white border-t-white absolute top-[0px] right-[0px]"></p>
-                                            <p className="h-0 w-0 border-[15px] border-transparent border-r-[#FA4318] border-t-[#FA4318] absolute top-[0px] right-[0px]"></p>
+                                            <p className="h-0 w-0 border-[15px] border-transparent border-r-[#203b70] border-t-[#203b70] absolute top-[0px] right-[0px]"></p>
                                         </div>
                                         <div className="relative shadow-md rounded-b-md pt-5">
-                                            <p className="h-0 w-0 border-[15px] border-transparent border-r-[#FA4318] border-t-[#FA4318] absolute top-[-0px] right-[0px] z-30"></p>
+                                            <p className="h-0 w-0 border-[15px] border-transparent border-r-[#203b70] border-t-[#203b70] absolute top-[-0px] right-[0px] z-30"></p>
                                             <h2 className="capitalize font-bold text-2xl pb-2 text-center">
                                                 {content.heading}
                                             </h2>
@@ -217,7 +217,7 @@ export default function HomeTeam() {
                                                 {content.text}
                                             </p>
                                             <div className="flex justify-center absolute -bottom-4 w-full">
-                                                <button className="font-semibold text-white bg-[#FA4318] flex gap-3 items-center justify-center h-[45px] w-[150px] rounded uppercase">
+                                                <button className="font-semibold text-white bg-[#203b70] flex gap-3 items-center justify-center h-[45px] w-[150px] rounded uppercase">
                                                     Read More
                                                     <i className="fa-solid fa-chevron-right text-sm"></i>
                                                 </button>
@@ -258,7 +258,7 @@ export default function HomeTeam() {
                                                     envato@gmail.com
                                                 </p>
                                                 <div className="flex justify-center absolute z-30 -bottom-4 w-full">
-                                                    <button className="font-semibold text-white bg-[#FA4318] flex gap-3 items-center justify-center h-[45px] w-[150px] rounded uppercase">
+                                                    <button className="font-semibold text-white bg-[#203b70] flex gap-3 items-center justify-center h-[45px] w-[150px] rounded uppercase">
                                                         Read More
                                                         <i className="fa-solid fa-chevron-right text-sm"></i>
                                                     </button>

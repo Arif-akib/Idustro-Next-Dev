@@ -21,7 +21,7 @@ export default function HomeContact() {
           <div className="size-full flex flex-col gap-10 justify-center items-center">
             <Image src={logo} alt="" className="h-[50px] w-auto"/>
             <h1 className="text-6xl font-bold text-white w-1/2 text-center">Contact to Expertise in the manufacturing industry</h1>
-            <button className="font-bold text-lg text-white bg-[#FA4318] flex gap-3 items-center justify-center h-[55px] w-[200px] rounded uppercase">
+            <button className="font-bold text-lg text-white bg-[#203b70] flex gap-3 items-center justify-center h-[55px] w-[200px] rounded uppercase">
               Contact Us
               <i className="fa-solid fa-chevron-right text-sm"></i>
             </button>

@@ -82,7 +82,7 @@ export default function HomeService() {
         <>
             <div className="mt-20 pb-[140px] relative">
                 <div className="flex flex-col items-center justify-center pt-[100px] bg-[url('/images/background/bg-background.jpg')] pb-[200px]">
-                    <p className="text-[#FA4318] text-lg font-bold mb-[-70px]">
+                    <p className="text-[#203b70] text-lg font-bold mb-[-70px]">
                         Our Awesome Services
                     </p>
                     <h4 className="text-transparent text-[110px] font-bold font-outline-2">
@@ -91,7 +91,7 @@ export default function HomeService() {
                     <h1 className="text-5xl font-bold w-1/2 text-center mt-[-70px]">
                         Building a more competitive business sectors
                     </h1>
-                    <p className="h-[2px] w-[60px] bg-[#FA4318] mt-2 rounded-md"></p>
+                    <p className="h-[2px] w-[60px] bg-[#203b70] mt-2 rounded-md"></p>
                 </div>
 
                 <div className="px-[10%] mt-[-150px] relative">
@@ -125,7 +125,7 @@ export default function HomeService() {
                                                     index % 3 == 0
                                                         ? "size-[90px] p-5 shadow-md bg-[#0099E2]"
                                                         : "" || index % 3 == 1
-                                                        ? "size-[90px] p-5 shadow-md bg-[#FA4318]"
+                                                        ? "size-[90px] p-5 shadow-md bg-[#203b70]"
                                                         : "" || index % 3 == 2
                                                         ? "size-[90px] p-5 shadow-md icon-bg bg-[#28Bc00]"
                                                         : ""
@@ -151,7 +151,7 @@ export default function HomeService() {
                                                                 ? "size-[90px] p-5 shadow-md bg-[#0099E2]"
                                                                 : "" ||
                                                                   index % 3 == 1
-                                                                ? "size-[90px] p-5 shadow-md bg-[#FA4318]"
+                                                                ? "size-[90px] p-5 shadow-md bg-[#203b70]"
                                                                 : "" ||
                                                                   index % 3 == 2
                                                                 ? "size-[90px] p-5 shadow-md icon-bg bg-[#28Bc00]"
@@ -182,7 +182,7 @@ export default function HomeService() {
                                                             ? "font-semibold text-white bg-[#0099E2] flex gap-3 items-center justify-center h-[45px] w-[130px] rounded uppercase "
                                                             : "" ||
                                                               index % 3 == 1
-                                                            ? "font-semibold text-white bg-[#FA4318] flex gap-3 items-center justify-center h-[45px] w-[130px] rounded uppercase"
+                                                            ? "font-semibold text-white bg-[#203b70] flex gap-3 items-center justify-center h-[45px] w-[130px] rounded uppercase"
                                                             : "" ||
                                                               index % 3 == 2
                                                             ? "font-semibold text-white bg-[#28Bc00] flex gap-3 items-center justify-center h-[45px] w-[130px] rounded uppercase "

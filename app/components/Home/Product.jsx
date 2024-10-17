@@ -106,7 +106,7 @@ export default function HomeProduct() {
         <>
             <div className="mt-20 pb-[140px] bg-gray-100 relative">
                 <div className="flex flex-col items-center justify-center pt-[100px] pb-5">
-                    <p className="text-[#FA4318] text-lg font-bold mb-[-70px] z-20">
+                    <p className="text-[#203b70] text-lg font-bold mb-[-70px] z-20">
                         Populat products
                     </p>
                     <h4 className="text-transparent text-[110px] font-bold font-outline-2 text-white z-10">
@@ -115,7 +115,7 @@ export default function HomeProduct() {
                     <h1 className="text-5xl font-bold w-1/2 text-center mt-[-70px] z-20">
                         We have the best quality industrial products.
                     </h1>
-                    <p className="h-[2px] w-[60px] bg-[#FA4318] rounded-md mt-5 z-20"></p>
+                    <p className="h-[2px] w-[60px] bg-[#203b70] rounded-md mt-5 z-20"></p>
                     <Image
                         src={bg1}
                         alt=""
@@ -222,7 +222,7 @@ export default function HomeProduct() {
                                             </div>
 
                                             <div className="flex justify-center absolute z-30 -bottom-4 w-full">
-                                                <button className="font-semibold text-white bg-[#FA4318] flex gap-3 items-center justify-center h-[45px] w-[160px] rounded uppercase">
+                                                <button className="font-semibold text-white bg-[#203b70] flex gap-3 items-center justify-center h-[45px] w-[160px] rounded uppercase">
                                                     ADD To cart
                                                     <i className="fa-solid fa-chevron-right text-sm"></i>
                                                 </button>

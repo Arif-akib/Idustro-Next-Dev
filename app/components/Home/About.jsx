@@ -23,14 +23,14 @@ export default function HomeAbout() {
                     <h4 className="text-white text-[110px] font-bold font-outline-2 absolute -z-10 top-[-40px] left-[-65px]">
                         Assessments
                     </h4>
-                    <p className="text-[#FA4318] text-lg font-bold mb-5">
+                    <p className="text-[#203b70] text-lg font-bold mb-5">
                         About our Company
                     </p>
                     <h2 className="text-4xl font-bold">
                         Providing Innovative Solutions to Equip Your Business
                         for Success and Growth.
                     </h2>
-                    <p className="h-[2px] w-[60px] bg-[#FA4318] mt-2 rounded-md"></p>
+                    <p className="h-[2px] w-[60px] bg-[#203b70] mt-2 rounded-md"></p>
                     <p className="mt-10 pr-[10%] text-lg">
                         Our commitment to excellence has allowed us to build
                         strong partnerships with foreign manufacturers and
@@ -53,7 +53,7 @@ export default function HomeAbout() {
                         </div>
                     </div>
                     <div className="flex items-center gap-10 mt-8">
-                        <button className="font-bold text-lg text-white bg-[#FA4318] flex gap-3 items-center justify-center h-[55px] w-[200px] rounded uppercase hover:bg-black duration-500 ease-in-out">
+                        <button className="font-bold text-lg text-white bg-[#203b70] flex gap-3 items-center justify-center h-[55px] w-[200px] rounded uppercase hover:bg-black duration-500 ease-in-out">
                             About Us
                             <i className="fa-solid fa-chevron-right text-sm"></i>
                         </button>

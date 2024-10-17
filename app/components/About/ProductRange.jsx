@@ -116,7 +116,7 @@ export default function ProductRange() {
                                                     index % 3 == 1
                                                         ? "size-[90px] p-5 shadow-md bg-[#0099E2]"
                                                         : "" || index % 3 == 2
-                                                        ? "size-[90px] p-5 shadow-md bg-[#FA4318]"
+                                                        ? "size-[90px] p-5 shadow-md bg-[#203b70]"
                                                         : "" || index % 3 == 0
                                                         ? "size-[90px] p-5 shadow-md icon-bg bg-[#28Bc00]"
                                                         : ""
@@ -142,7 +142,7 @@ export default function ProductRange() {
                                                                 ? "size-[90px] p-5 shadow-md bg-[#0099E2]"
                                                                 : "" ||
                                                                   index % 3 == 1
-                                                                ? "size-[90px] p-5 shadow-md bg-[#FA4318]"
+                                                                ? "size-[90px] p-5 shadow-md bg-[#203b70]"
                                                                 : "" ||
                                                                   index % 3 == 2
                                                                 ? "size-[90px] p-5 shadow-md icon-bg bg-[#28Bc00]"
@@ -173,7 +173,7 @@ export default function ProductRange() {
                                                             ? "font-semibold text-white bg-[#0099E2] flex gap-3 items-center justify-center h-[45px] w-[130px] rounded uppercase "
                                                             : "" ||
                                                               index % 3 == 1
-                                                            ? "font-semibold text-white bg-[#FA4318] flex gap-3 items-center justify-center h-[45px] w-[130px] rounded uppercase"
+                                                            ? "font-semibold text-white bg-[#203b70] flex gap-3 items-center justify-center h-[45px] w-[130px] rounded uppercase"
                                                             : "" ||
                                                               index % 3 == 2
                                                             ? "font-semibold text-white bg-[#28Bc00] flex gap-3 items-center justify-center h-[45px] w-[130px] rounded uppercase "

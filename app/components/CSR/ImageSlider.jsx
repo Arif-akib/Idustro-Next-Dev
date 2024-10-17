@@ -61,7 +61,7 @@ export default function CSRSlider() {
     <>
       <div className="pb-[140px] bg-gray-100 relative">
         <div className="flex flex-col items-center justify-center pt-[100px] pb-5">
-          <p className="text-[#FA4318] text-lg font-bold mb-[-70px] z-20">
+          <p className="text-[#203b70] text-lg font-bold mb-[-70px] z-20">
             Image Gallery
           </p>
           <h4 className="text-transparent text-[110px] font-bold font-outline-2 text-white z-10">
@@ -70,7 +70,7 @@ export default function CSRSlider() {
           <h1 className="text-5xl font-bold w-1/2 text-center mt-[-70px] z-20">
             Some images of our work
           </h1>
-          <p className="h-[2px] w-[60px] bg-[#FA4318] rounded-md mt-5 z-20"></p>
+          <p className="h-[2px] w-[60px] bg-[#203b70] rounded-md mt-5 z-20"></p>
           <Image
             src={bg1}
             alt=""

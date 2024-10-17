@@ -7,7 +7,7 @@ export default function TeamGrid({ team }) {
       <div className="px-[10%] py-28">
         <div className="flex items-end gap-5">
           <div className="w-1/2">
-            <p className="text-[#FA4318] text-lg font-bold mb-2">{team.text}</p>
+            <p className="text-[#203b70] text-lg font-bold mb-2">{team.text}</p>
             <h3 className="text-5xl font-bold">{team.heading}</h3>
           </div>
           <div className="w-1/2">
@@ -25,7 +25,7 @@ export default function TeamGrid({ team }) {
                 alt=""
                 className="size-full object-cover aspect-auto"
               />
-              <div className="bg-[#0d0d42] text-white rounded-tl-[0%] rounded-tr-[100%] border-[#fa4318] border-t-[5px] px-5 pt-16 pb-5 absolute bottom-0 w-full translate-y-full group-hover:translate-y-0 duration-500">
+              <div className="bg-[#0d0d42] text-white rounded-tl-[0%] rounded-tr-[100%] border-[#203b70] border-t-[5px] px-5 pt-16 pb-5 absolute bottom-0 w-full translate-y-full group-hover:translate-y-0 duration-500">
                 <p className="text-2xl font-bold pb-2 line-clamp-1 capitalize">
                   {content.heading}
                 </p>

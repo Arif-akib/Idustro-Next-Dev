@@ -59,7 +59,7 @@ export default function BlogSingleCard({ content }) {
             <p className="text-3xl font-bold">{content.heading}</p>
             <p className="line-clamp-2 text-lg">{content.text}</p>
             <Link href={`/blog/${content.id}`}>
-              <button className="font-semibold text-white bg-[#FA4318] flex gap-3 items-center justify-center h-[45px] w-[130px] rounded uppercase">
+              <button className="font-semibold text-white bg-[#203b70] flex gap-3 items-center justify-center h-[45px] w-[130px] rounded uppercase">
                 Read More
                 <i className="fa-solid fa-chevron-right text-sm"></i>
               </button>

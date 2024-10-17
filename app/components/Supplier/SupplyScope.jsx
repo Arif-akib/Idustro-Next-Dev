@@ -111,7 +111,7 @@ export default function SupplyScope() {
               />
               <div className="absolute rounded-lg size-full top-0 flex flex-col justify-between p-5 bg-[#ffffffe1] gap-5 group-hover:bg-[#612249cb] group-hover:text-white duration-500">
                 <div className="flex justify-between">
-                  <button className="font-bold text-white bg-[#FA4318] size-[50px] text-3xl flex items-center justify-center rounded-md shadow group-hover:rotate-90 scale-75 group-hover:scale-100 duration-500">
+                  <button className="font-bold text-white bg-[#203b70] size-[50px] text-3xl flex items-center justify-center rounded-md shadow group-hover:rotate-90 scale-75 group-hover:scale-100 duration-500">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 24 24"

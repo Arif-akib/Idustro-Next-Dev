@@ -55,10 +55,10 @@ export default function Footer() {
                             </button>
                         </div>
                         <div className="flex gap-8 text-lg text-gray-400">
-                            <i className="fa-brands fa-facebook hover:text-[#FA4318]"></i>
-                            <i className="fa-brands fa-twitter hover:text-[#FA4318]"></i>
-                            <i className="fa-brands fa-dribbble hover:text-[#FA4318]"></i>
-                            <i className="fa-brands fa-behance hover:text-[#FA4318]"></i>
+                            <i className="fa-brands fa-facebook hover:text-[#203b70]"></i>
+                            <i className="fa-brands fa-twitter hover:text-[#203b70]"></i>
+                            <i className="fa-brands fa-dribbble hover:text-[#203b70]"></i>
+                            <i className="fa-brands fa-behance hover:text-[#203b70]"></i>
                         </div>
                     </div>
                     <div className="space-y-8 mt-8">
@@ -71,14 +71,14 @@ export default function Footer() {
                         <div className="space-y-3">
                             <div className="flex items-center gap-5 font-semibold">
                                 <i className="fa-solid fa-location-dot text-gray-400 text-xl"></i>
-                                <p className="text-gray-400 hover:text-[#FA4318]">
+                                <p className="text-gray-400 hover:text-[#203b70]">
                                     30 Commercial Road ,<br />
                                     Fratton, Australia
                                 </p>
                             </div>
                             <div className="flex items-center gap-5 font-semibold">
                                 <i className="fa-solid fa-phone-volume text-gray-400 text-xl"></i>
-                                <p className="text-gray-400 hover:text-[#FA4318]">
+                                <p className="text-gray-400 hover:text-[#203b70]">
                                     +(888) 452 1505
                                 </p>
                             </div>

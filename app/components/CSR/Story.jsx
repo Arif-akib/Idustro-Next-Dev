@@ -114,7 +114,7 @@ export default function CsrStory() {
         />
         <div className="flex justify-between items-end pt-[100px] pb-5 px-[10%] z-10 relative">
           <div className="relative flex flex-col">
-            <p className="text-[#FA4318] text-lg font-bold mb-[-70px] z-20">
+            <p className="text-[#203b70] text-lg font-bold mb-[-70px] z-20">
               Latest Stories
             </p>
             <h4 className="text-transparent text-[110px] font-bold font-outline-2 z-10 -ml-16">
@@ -123,7 +123,7 @@ export default function CsrStory() {
             <h1 className="text-5xl font-bold mt-[-70px] z-20">
               Learn something from stories
             </h1>
-            <p className="h-[2px] w-[60px] bg-[#FA4318] rounded-md mt-5 z-20"></p>
+            <p className="h-[2px] w-[60px] bg-[#203b70] rounded-md mt-5 z-20"></p>
           </div>
           <div className="flex gap-3 items-center justify-center">
             <button onClick={slideLeft} className="hover:primary-color">

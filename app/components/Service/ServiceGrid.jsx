@@ -84,7 +84,7 @@ export default function Servicegrid() {
               className="size-full aspect-auto object-cover"
             />
             <div className="absolute w-full bottom-0 flex flex-col items-center justify-center bg-gradient-to-r from-[#a8003ee1] to-[#f30031ea] group-hover:translate-y-[150%] duration-500 group-hover:opacity-0 ease-in-out">
-              <div className="size-[80px] p-4 bg-white rounded-full flex items-center justify-center border-[3px] border-[#FA4318] -mt-10">
+              <div className="size-[80px] p-4 bg-white rounded-full flex items-center justify-center border-[3px] border-[#203b70] -mt-10">
                 <Image src={content.icon} alt="" className=" size-[40px]" />
               </div>
               <p className="text-white text-2xl font-bold pb-5">
@@ -94,7 +94,7 @@ export default function Servicegrid() {
             <div className="absolute size-full bottom-0 flex flex-col items-center justify-center p-5 bg-gradient-to-r from-[#a8003ee1] to-[#f30031ea] text-white text-center gap-5 translate-y-[100%] group-hover:translate-y-0 duration-500 opacity-0 group-hover:opacity-100 ease-in-out">
               <p className="text-2xl font-bold">{ content.title}</p>
               <p className="line-clamp-3">{content.text}</p>
-              <button className="font-bold text-white text-sm bg-[#FA4318] flex gap-3 items-center justify-center h-[40px] w-[130px] rounded-full shadow">
+              <button className="font-bold text-white text-sm bg-[#203b70] flex gap-3 items-center justify-center h-[40px] w-[130px] rounded-full shadow">
                 Read more
                 <i className="fa-solid fa-chevron-right text-xs"></i>
               </button>

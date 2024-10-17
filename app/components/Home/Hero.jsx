@@ -58,7 +58,7 @@ export default function Hero() {
                     <div className="absolute z-30 flex flex-col gap-5 right-5 top-[350px]">
                         <button
                             onClick={slideRight}
-                            className="size-[50px] flex items-center justify-center bg-white rounded-3xl hover:bg-[#FA4318] group duration-500"
+                            className="size-[50px] flex items-center justify-center bg-white rounded-3xl hover:bg-[#203b70] group duration-500"
                         >
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -73,7 +73,7 @@ export default function Hero() {
                         </button>
                         <button
                             onClick={slideLeft}
-                            className="size-[50px] flex items-center justify-center bg-white rounded-3xl hover:bg-[#FA4318] group duration-500"
+                            className="size-[50px] flex items-center justify-center bg-white rounded-3xl hover:bg-[#203b70] group duration-500"
                         >
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -117,8 +117,8 @@ export default function Hero() {
                                         <button
                                             className={
                                                 index == currentIndex
-                                                    ? "font-bold text-lg text-white bg-[#FA4318] flex gap-3 items-center justify-center h-[55px] w-[200px] rounded uppercase translate-y-0 duration-1000 delay-100 opacity-100 ease-linear"
-                                                    : "font-bold text-lg text-white bg-[#FA4318] flex gap-3 items-center justify-center h-[55px] w-[200px] rounded uppercase -translate-y-[600%] opacity-0"
+                                                    ? "font-bold text-lg text-white bg-[#203b70] flex gap-3 items-center justify-center h-[55px] w-[200px] rounded uppercase translate-y-0 duration-1000 delay-100 opacity-100 ease-linear"
+                                                    : "font-bold text-lg text-white bg-[#203b70] flex gap-3 items-center justify-center h-[55px] w-[200px] rounded uppercase -translate-y-[600%] opacity-0"
                                             }
                                         >
                                             Our Services
