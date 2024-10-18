@@ -108,7 +108,7 @@ export default function HomeProduct() {
                         alt="Nahar industrial Services"
                         width={500}
                         height={500}
-                        className="absolute top-0 left-[13%]"
+                        className="absolute top-0 left-[13%] z-0"
                     />
                     <Image
                         src="/images/background/vt-2.png"
@@ -237,8 +237,8 @@ export default function HomeProduct() {
                 <Image
                     src="/images/background/vt-5.png"
                     alt="Nahar industrial Services"
-                    width={500}
-                    height={500}
+                    width={200}
+                    height={200}
                     className="absolute bottom-0 right-0 z-0"
                 />
             </div>

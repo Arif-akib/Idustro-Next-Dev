@@ -132,7 +132,7 @@ export default function SlideShow({ portfolio }) {
                                 <path d="M12 13V20L4 12L12 4V11H20V13H12Z"></path>
                             </svg>
                         </button>
-                        <div className="font-bold flex gap-1 text-sm">
+                        <div className="font-bold flex gap-1 text-sm relative z-20">
                             {contents.map((content, index) => (
                                 <p
                                     key={index}
