@@ -56,10 +56,10 @@ export default function ContactAddress() {
     return (
         <>
             <div className="py-16 px-[10%]">
-                <h2 className="pb-10 font-bold text-5xl text-center">
+                <h2 className="pb-10 font-bold text-3xl xl:text-5xl text-center">
                     Office Near You
                 </h2>
-                <div className="grid grid-cols-3 gap-5">
+                <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-5">
                     {Address.map((content, index) => (
                         <div className="bg-white p-8 rounded-md shadow-md group">
                             <div className="flex gap-5 items-center pb-5">
