@@ -42,7 +42,7 @@ export default function Service() {
         <>
             <Hero HeroLable={HeroLable} bread={ bread } />
             <Servicegrid />
-            <div className="px-[10%] bg-[url('/images/background/bg-bottom-portfolio-content.png')] bg-no-repeat bg-right">
+            <div className="px-[5%] xl:px-[10%] bg-[url('/images/background/bg-bottom-portfolio-content.png')] bg-no-repeat bg-right">
                 <ServiceContact />
                 <ServiceWork/>
             </div>

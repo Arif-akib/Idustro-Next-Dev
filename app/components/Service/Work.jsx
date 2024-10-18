@@ -20,14 +20,14 @@ export default function ServiceWork() {
   ];
   return (
     <>
-      <div className="flex gap-10 my-20 ">
-        <div className="w-1/2 pr-16 pb-16 relative">
+      <div className="flex flex-col-reverse lg:flex-row gap-10 my-20 ">
+        <div className="lg:w-1/2 pr-6 sm:pr-16 pb-16 relative">
           <img
             src="/images/service/image-banner.jpg"
             alt=""
             className="size-full rounded-md"
           />
-          <div className="primary-background text-white font-bold text-4xl text-center py-5 px-8 rounded-md shadow absolute top-10 right-0">
+          <div className="primary-background text-white font-bold text-xl sm:text-4xl text-center py-5 px-8 rounded-md shadow absolute top-5 sm:top-10 right-0">
             <p>20 +</p>
             <p>Years</p>
           </div>
@@ -35,13 +35,13 @@ export default function ServiceWork() {
             <img
               src="/images/service/fcb-crs-3-255x210.jpg"
               alt=""
-              className="rounded-md"
+              className="rounded-md size-[150px] sm:size-auto object-cover aspect-square"
             />
           </div>
         </div>
-        <div className="w-1/2">
+        <div className="lg:w-1/2">
           <p className="primary-color text-xl font-bold pb-1">How It Work</p>
-          <h2 className="text-5xl font-bold">Our Company Working Process</h2>
+          <h2 className="text-3xl xl:text-5xl font-bold">Our Company Working Process</h2>
           <div className="pt-10 space-y-10">
             {works.map((work, index) => (
               <div key={index} className="group flex gap-3 items-center">
@@ -49,7 +49,7 @@ export default function ServiceWork() {
                   {work.mumber}
                 </p>
                 <div>
-                  <h3 className="text-3xl font-bold pb-2">{work.name}</h3>
+                  <h3 className="text-lg sm:text-2xl lg:text-3xl font-bold pb-2">{work.name}</h3>
                   <p className="text-gray-600">{work.text}</p>
                 </div>
               </div>

@@ -72,7 +72,7 @@ export default function Servicegrid() {
 
   return (
     <>
-      <div className="px-[10%] pt-32 py-10 grid grid-cols-4 gap-5">
+      <div className="px-[5%] xl:px-[10%] pt-32 py-10 grid md:grid-cols-2 xl:grid-cols-4 gap-5">
         {contents.map((content, index) => (
           <div
             key={index}
