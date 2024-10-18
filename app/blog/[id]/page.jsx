@@ -82,7 +82,7 @@ export default function SingleBlog({ params }) {
   return (
     <>
       <Hero HeroLable={HeroLable} bread={bread} />
-      <div className="w-[1000px] mx-auto pt-32 pb-20">
+      <div className="xl:w-[1000px] mx-auto pt-32 pb-20">
         <Image
           src={blog.bg}
           className="w-full h-[450px] object-cover rounded-t-md"
@@ -155,7 +155,7 @@ export default function SingleBlog({ params }) {
           </div>
           <div className="px-[10%] pb-20">
               <h1 className="text-3xl font-bold">Related post</h1>
-              <div className='my-10 grid grid-cols-3 gap-5'>
+              <div className='my-10 grid lg:grid-cols-2 xl:grid-cols-3 gap-5'>
                 {contents.map((content, index) => (
                     <div className='overflow-hidden shadow-md rounded-md'>
                         <BlogSingleCard key={index} content={ content} />

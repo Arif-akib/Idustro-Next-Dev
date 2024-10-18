@@ -89,17 +89,17 @@ export default function Hero() {
                     </div>
 
                     <div className="absolute z-20 h-full w-full">
-                        <div className="min-h-[500px]">
+                        <div className="min-h-[500px] sm:min-h-[350px] lg:min-h-[500px]">
                             {slide.map((content, index) => (
                                 <div
                                     key={index}
                                     className="text-white relative h-fit"
                                 >
-                                    <div className="absolute z-20 top-[150px] space-y-10 w-full md:w-2/3 xl:w-1/2 pl-[5%] xl:pl-[10%]">
+                                    <div className="absolute z-20 top-[150px] space-y-10 w-full lg:w-2/3 px-[5%] xl:px-[10%]">
                                         <h1
                                             className={
                                                 index == currentIndex
-                                                    ? "text-3xl sm:4xl lg:text-6xl font-bold translate-y-0 duration-1000 delay-1000 opacity-100 ease-linear"
+                                                    ? "text-3xl sm:4xl md:text-5xl lg:text-6xl font-bold translate-y-0 duration-1000 delay-1000 opacity-100 ease-linear"
                                                     : "text-3xl sm:4xl lg:text-6xl font-bold -translate-y-[100%] opacity-0"
                                             }
                                         >
@@ -122,7 +122,6 @@ export default function Hero() {
                                             }
                                         >
                                             Our Services
-                                            <i className="fa-solid fa-chevron-right text-sm"></i>
                                         </button>
                                     </div>
                                 </div>

@@ -16,7 +16,7 @@ export default function BlogSingleCard({ content }) {
                     {content.type}
                 </p>
                 <div className="flex flex-col p-5 bg-white rounded-b-lg gap-5 items-center absolute z-0 bottom-0 w-full group-hover:-translate-y-5 group-hover:opacity-0 duration-300 ease-out">
-                    <div className="flex items-center w-full gap-5">
+                    <div className="flex flex-col md:flex-row items-center w-full gap-5">
                         <div className="flex items-center gap-2">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -34,7 +34,7 @@ export default function BlogSingleCard({ content }) {
                                 </span>
                             </p>
                         </div>
-                        <p className="h-[20px] w-[.5px] bg-gray-500"></p>
+                        <p className="h-[20px] w-[.5px] bg-gray-500 hidden md:block"></p>
                         <div className="flex items-center gap-2">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -60,7 +60,7 @@ export default function BlogSingleCard({ content }) {
                             </p>
                         </div>
                         <div className="h-0 w-0 border-[25px] border-transparent border-t-[#c2482c] border-l-[#c2482c] absolute top-[90px] right-[-50px]"></div>
-                        <p className="text-3xl font-bold">{content.heading}</p>
+                        <p className="text-3xl font-bold line-clamp-2">{content.heading}</p>
                         <p className="line-clamp-2 text-lg">{content.text}</p>
                         <Link href={`/blog/${content.id}`}>
                             <button className="font-semibold text-white bg-[#203b70] flex gap-3 items-center justify-center h-[45px] w-[130px] rounded uppercase">

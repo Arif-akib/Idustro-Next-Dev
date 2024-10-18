@@ -81,25 +81,43 @@ export default function HomeService() {
     return (
         <>
             <div className="mt-20 pb-[140px] relative">
-                <div className="flex flex-col items-center justify-center pt-[100px] bg-[url('/images/background/bg-background.jpg')] pb-[200px]">
-                    <p className="text-[#203b70] text-lg font-bold mb-[-70px]">
+                <div className="flex flex-col items-center justify-center pt-[100px] bg-[url('/images/background/bg-background.jpg')] pb-[200px] px-[5%]">
+                    <p className="text-[#203b70] text-lg font-bold mb-0 xl:mb-[-70px]">
                         Our Awesome Services
                     </p>
-                    <h4 className="text-transparent text-[110px] font-bold font-outline-2">
+                    <h4 className="text-transparent text-4xl md:7xl xl:text-[110px] font-bold font-outline-2">
                         Services
                     </h4>
-                    <h1 className="text-5xl font-bold w-1/2 text-center mt-[-70px]">
+                    <h1 className="text-3xl lg:text-5xl font-bold w-full lg:w-1/2 text-center mt-0 xl:mt-[-70px]">
                         Building a more competitive business sectors
                     </h1>
                     <p className="h-[2px] w-[60px] bg-[#203b70] mt-2 rounded-md"></p>
                 </div>
 
-                <div className="px-[10%] mt-[-150px] relative">
+                <div className="px-[5%] xl:px-[10%] mt-[-150px] relative">
                     <Swiper
-                        slidesPerView={3}
+                        slidesPerView={1}
                         spaceBetween={20}
                         loop={true}
                         modules={[Navigation, Pagination]}
+                        breakpoints={{
+                            640: {
+                                slidesPerView: 1.5,
+                                spaceBetween: 20,
+                            },
+                            1040: {
+                                slidesPerView: 2,
+                                spaceBetween: 20,
+                            },
+                            1280: {
+                                slidesPerView: 2.5,
+                                spaceBetween: 20,
+                            },
+                            1480: {
+                                slidesPerView: 3,
+                                spaceBetween: 20,
+                            },
+                        }}
                         onSwiper={(swiper) => {
                             swiperRef.current = swiper;
                         }}

@@ -28,8 +28,8 @@ export default function SlideShow({ portfolio }) {
     });
     return (
         <>
-            <div className="flex relative pb-16 mb-16">
-                <div className="h-[700px] w-[65%] relative">
+            <div className="flex flex-col md:flex-row relative pb-16 mb-16">
+                <div className="h-[400px] md:h-[770px] xl:h-[700px] md:w-[65%] relative">
                     {contents.map((content, index) => (
                         <div key={index} className="">
                             <Image
@@ -78,17 +78,17 @@ export default function SlideShow({ portfolio }) {
                         </div>
                     ))}
                 </div>
-                <div className="w-[35%] mt-[-65px] -ml-20">
-                    <div className="bg-gray-600 text-white h-[700px]  pt-[60px]  pl-[120px] pr-[40px]">
-                        <h1 className="text-5xl font-bold">{heading}</h1>
+                <div className="md:w-[35%] md:mt-[-65px] lg:-ml-20">
+                    <div className="bg-gray-600 text-white h-[770px] xl:h-[700px]  pt-[60px] pl-10 lg:pl-[120px] pr-[40px] hidden md:block">
+                        <h1 className="text-3xl lg:text-5xl font-bold">{heading}</h1>
                         <div className="py-6 flex flex-col gap-4 mt-4 relative">
                             {contents.map((content, index) => (
                                 <div
                                     key={index}
                                     className={
                                         index == currentIndex
-                                            ? "text-xl font-semibold pl-10 flex gap-2 items-center duration-300"
-                                            : "text-xl font-semibold mb-5 flex gap-2 items-center"
+                                            ? "text-lg md:text-xl font-semibold pl-5 lg:pl-10 flex gap-2 items-center duration-300"
+                                            : "text-lg md:text-xl font-semibold mb-5 flex gap-2 items-center"
                                     }
                                 >
                                     <h3
@@ -109,15 +109,15 @@ export default function SlideShow({ portfolio }) {
                                     <p
                                         className={
                                             index == currentIndex
-                                                ? "w-[180px] h-[4px] primary-background absolute left-[-150px] z-40 duration-300"
-                                                : "w-[180px] h-[4px] primary-background absolute left-[-190px] z-40 opacity-0"
+                                                ? "w-[180px] h-[4px] primary-background absolute left-[-190px] lg:left-[-150px] z-40 duration-300"
+                                                : "w-[180px] h-[4px] primary-background absolute left-[-230px] lg:left-[-190px] z-40 opacity-0"
                                         }
                                     ></p>
                                 </div>
                             ))}
                         </div>
                     </div>
-                    <div className="flex gap-1 items-center justify-center mt-8 pl-[80px]">
+                    <div className="flex gap-1 items-center justify-center mt-8 lg:pl-[80px]">
                         <button
                             onClick={slideLeft}
                             className="hover:primary-color"

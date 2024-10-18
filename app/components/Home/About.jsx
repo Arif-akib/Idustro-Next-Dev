@@ -39,13 +39,13 @@ export default function HomeAbout() {
                         of our clients in Bangladesh.
                     </p>
                     <div className="grid sm:grid-cols-2 gap-10 py-8 border-b">
-                        <div className="flex items-center gap-3">
+                        <div className="flex justify-center sm:justify-start items-center gap-3">
                             <Image src={bg1} alt="" />
                             <h3 className="text-2xl font-bold">
                                 Strengthening society
                             </h3>
                         </div>
-                        <div className="flex items-center gap-3">
+                        <div className="flex justify-center sm:justify-start items-center gap-3">
                             <Image src={bg2} alt="" />
                             <h3 className="text-2xl font-bold">
                                 Driving the economy

@@ -41,6 +41,7 @@ export default function HomeBlog() {
 
     const contents = [
         {
+            id:1,
             bg: "/images/blog/visit.jpg",
             type: "industry",
             heading: "Visit to Ghorashal 365mw Combined Power Plant",
@@ -50,6 +51,7 @@ export default function HomeBlog() {
             text: "Had an incredible visit to Ghorashal 365mw Combined Power Plant, Ashuganj Power Station Company Ltd., and Ashuganj Fertilizer & Chemical Company Limited. A big thank you to the Project Director of Changsha Pump Works Co., Ltd., the Manager of Anhui Bring I&E Trading, and the Managing Partner of NIREM Service Team for joining us.",
         },
         {
+            id:2,
             bg: "/images/blog/partnership.jpg",
             type: "industry",
             heading: "We are thrilled to announce a new partnership",
@@ -59,6 +61,7 @@ export default function HomeBlog() {
             text: "We are thrilled to announce a new partnership between M/s. Progoti Engineering Works and NIREM Service Team. In a signing ceremony attended by our esteemed partners, Mr. Md. Saiful Islam Tushar (Proprietor of Progoti Engineering Works) and Mr. Md. Saiful Islam (Managing Partner), Mr. Abdulla Muzahid (Partner), Engr. Kamrul Islam (Tech. Asst. Manager) & the dedicated team from NIREM SERVICE TEAM, we have officially joined forces to enhance our service offerings across various industries, including BPDB, Fertilizers, and more",
         },
         {
+            id:3,
             bg: "/images/blog/flood.jpg",
             type: "donation",
             heading: "বন্যাপীড়িত এলাকা সফর",
@@ -68,6 +71,7 @@ export default function HomeBlog() {
             text: "NIREM Service Team , কালিকাপুর ক্লাব, Anhui Bring I&E Co., China ও বিভিন্ন প্রকৌশলীর যৌথ উদ্যোগে আজ ফটিকছড়ির বন্যাপীড়িত এলাকা সফর করে সেখানের মানুষের মাঝে আমাদের উপহার বিতরণ করেছি। এই বিপর্যয়ের সময়ে তাদের মুখে একটু হাসি ফোটানোই আমাদের লক্ষ্য ছিল। উপহার প্রস্তুত ও বিতরণে যারা প্রাণপণ পরিশ্রম করেছেন, তাদের প্রতি আমাদের অন্তরস্থল থেকে গভীর কৃতজ্ঞতা জ্ঞাপন করছি। আপনারা সত্যিই অসাধারণ",
         },
         {
+            id:4,
             bg: b4,
             type: "factory",
             heading: "construction Industry Heading Upwrite Using",
@@ -77,6 +81,7 @@ export default function HomeBlog() {
             text: "The Supply from the standard in addition to customized",
         },
         {
+            id:5,
             bg: b5,
             type: "Construction",
             heading: "Key headlines for the best pharmaceutical",
@@ -86,6 +91,7 @@ export default function HomeBlog() {
             text: "The Supply from the standard in addition to customized",
         },
         {
+            id:6,
             bg: b6,
             type: "factory",
             heading: "Optimise and improve their capabilities",
@@ -105,15 +111,15 @@ export default function HomeBlog() {
                     alt=""
                     className="absolute bottom-0 left-0 size-[180px]"
                 />
-                <div className="flex justify-between items-end pt-[100px] pb-5 px-[10%] z-10 relative">
+                <div className="flex flex-col lg:flex-row justify-between lg:items-end pt-[100px] pb-5 px-[5%] xl:px-[10%] gap-5 z-10 relative">
                     <div className="relative flex flex-col">
-                        <p className="text-[#203b70] text-lg font-bold mb-[-70px] z-20">
+                        <p className="text-[#203b70] text-lg font-bold xl:mb-[-70px] z-20">
                             Latest blog
                         </p>
-                        <h4 className="text-transparent text-[110px] font-bold font-outline-2 z-10 -ml-16">
+                        <h4 className="text-transparent text-4xl md:7xl xl:text-[110px] font-bold font-outline-2 z-10 xl:-ml-16">
                             Blog
                         </h4>
-                        <h1 className="text-5xl font-bold mt-[-70px] z-20">
+                        <h1 className="text-3xl lg:text-5xl font-bold xl:mt-[-70px] z-20">
                             Learn something from blog
                         </h1>
                         <p className="h-[2px] w-[60px] bg-[#203b70] rounded-md mt-5 z-20"></p>
@@ -133,7 +139,7 @@ export default function HomeBlog() {
                                 <path d="M12 13V20L4 12L12 4V11H20V13H12Z"></path>
                             </svg>
                         </button>
-                        <div className="font-semibold flex gap-2 cursor-pointer">
+                        <div className="text-sm sm:text-base font-semibold flex gap-2 cursor-pointer">
                             {contents.map((content, index) => (
                                 <p
                                     onClick={() => {
@@ -173,7 +179,7 @@ export default function HomeBlog() {
                 </div>
 
                 <BlogCard contents={contents} swiperRef={swiperRef} />
-                <div className="relative z-20 px-[10%] flex justify-center mt-10">
+                <div className="relative z-20 px-[5%] xl:px-[10%] flex justify-center mt-10">
                     <button className="w-[120px] h-[45px] rounded-md shadow-md primary-background text-white font-bold hover:scale-110 duration-500">
                         <Link href="/blog">View All</Link>
                     </button>

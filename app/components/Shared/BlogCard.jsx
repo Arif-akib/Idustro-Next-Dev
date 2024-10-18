@@ -6,12 +6,30 @@ import BlogSingleCard from "./BlogSingleCard";
 export default function BlogCard({ contents, swiperRef }) {
     return (
         <>
-            <div className="px-[10%]  relative">
+            <div className="px-[5%] xl:px-[10%]  relative">
                 <Swiper
-                    slidesPerView={3}
+                    slidesPerView={1}
                     spaceBetween={20}
                     loop={true}
                     modules={[Navigation, Pagination]}
+                    breakpoints={{
+                        640: {
+                            slidesPerView: 1.5,
+                            spaceBetween: 20,
+                        },
+                        1040: {
+                            slidesPerView: 2,
+                            spaceBetween: 20,
+                        },
+                        1280: {
+                            slidesPerView: 2.5,
+                            spaceBetween: 20,
+                        },
+                        1480: {
+                            slidesPerView: 3,
+                            spaceBetween: 20,
+                        },
+                    }}
                     onSwiper={(swiper) => {
                         swiperRef.current = swiper;
                     }}

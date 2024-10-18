@@ -92,14 +92,14 @@ export default function HomeProduct() {
     return (
         <>
             <div className="mt-20 pb-[140px] bg-gray-100 relative">
-                <div className="flex flex-col items-center justify-center pt-[100px] pb-5">
-                    <p className="text-[#203b70] text-lg font-bold mb-[-70px] z-20">
+                <div className="flex flex-col items-center justify-center pt-[100px] pb-5 px-[5%]">
+                    <p className="text-[#203b70] text-lg font-bold xl:mb-[-70px] z-20">
                         Popular Products
                     </p>
-                    <h4 className="text-transparent text-[110px] font-bold font-outline-2 text-white z-10">
+                    <h4 className="text-transparent text-4xl md:7xl xl:text-[110px] font-bold font-outline-2 text-white z-10">
                         Product
                     </h4>
-                    <h1 className="text-5xl font-bold w-1/2 text-center mt-[-70px] z-20">
+                    <h1 className="text-3xl lg:text-5xl font-bold w-full lg:w-1/2 text-center xl:mt-[-70px] z-20">
                         We have the best quality industrial products.
                     </h1>
                     <p className="h-[2px] w-[60px] bg-[#203b70] rounded-md mt-5 z-20"></p>
@@ -119,12 +119,26 @@ export default function HomeProduct() {
                     />
                 </div>
 
-                <div className="px-[10%]  relative">
+                <div className="px-[5%] xl:px-[10%]  relative">
                     <Swiper
-                        slidesPerView={4}
+                        slidesPerView={1}
                         spaceBetween={20}
                         loop={true}
                         modules={[Navigation, Pagination]}
+                        breakpoints={{
+                            640: {
+                                slidesPerView: 2,
+                                spaceBetween: 20,
+                            },
+                            1040: {
+                                slidesPerView: 3,
+                                spaceBetween: 20,
+                            },
+                            1280: {
+                                slidesPerView: 4,
+                                spaceBetween: 20,
+                            },
+                        }}
                         onSwiper={(swiper) => {
                             swiperRef.current = swiper;
                         }}
@@ -186,7 +200,7 @@ export default function HomeProduct() {
                                     <path d="M12 13V20L4 12L12 4V11H20V13H12Z"></path>
                                 </svg>
                             </button>
-                            <div className="font-semibold flex gap-2 cursor-pointer">
+                            <div className="font-semibold text-sm sm:text-base flex gap-2 cursor-pointer">
                                 {contents.map((content, index) => (
                                     <p
                                         onClick={() => {
