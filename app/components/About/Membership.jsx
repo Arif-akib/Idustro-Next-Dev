@@ -25,10 +25,10 @@ export default function Membership() {
 
   return (
     <>
-      <div className="px-[10%] py-20 bg-gray-100 mt-10">
+      <div className="px-[5%] xl:px-[10%] py-20 bg-gray-100 mt-10">
         <div className="mb-10">
-          <h2 className="text-5xl font-bold text-center">Company Overview</h2>
-          <div className="grid grid-cols-3 gap-5 font-bold text-xl mt-8">
+          <h2 className="text-3xl lg:text-5xl font-bold text-center">Company Overview</h2>
+          <div className="grid lg:grid-cols-3 gap-5 font-bold text-xl mt-8">
             <p className="flex items-center gap-2">
               <img
                 src="/images/icon/right.png"
@@ -57,8 +57,8 @@ export default function Membership() {
               </div>
               
               <div className="mb-10">
-          <h2 className="text-5xl font-bold text-center">Banking</h2>
-          <div className="flex justify-center gap-5 mt-8">
+          <h2 className="text-3xl lg:text-5xl font-bold text-center">Banking</h2>
+          <div className="flex flex-col sm:flex-row justify-center gap-5 mt-8">
             <p className="flex items-center gap-2">
               <span className="font-bold text-xl">Bank : </span>Prime Bank Limited
             </p>
@@ -72,8 +72,8 @@ export default function Membership() {
           <p className="text-lg font-bold primary-color text-center pb-3">
             Membership
           </p>
-          <h2 className="text-5xl font-bold text-center">Our Membership</h2>
-          <div className="pt-10 grid grid-cols-3 gap-8">
+          <h2 className="text-3xl lg:text-5xl font-bold text-center">Our Membership</h2>
+          <div className="pt-10 grid md:grid-cols-2 xl:grid-cols-3 gap-8">
             {contents.map((content, index) => (
               <div
                 key={index}

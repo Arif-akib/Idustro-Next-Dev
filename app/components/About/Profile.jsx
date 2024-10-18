@@ -1,12 +1,12 @@
 export default function AboutProfile() {
     return (
         <>
-            <div className="grid grid-cols-2 gap-10 px-[10%] py-10 bg-[url('/images/background/bg-background.jpg')]">
+            <div className="grid xl:grid-cols-2 gap-10 px-[5%] xl:px-[10%] py-10 bg-[url('/images/background/bg-background.jpg')]">
                 <div>
-                    <h2 className="text-5xl font-bold pt-4">
+                    <h2 className="text-3xl sm:text-4xl xl:text-5xl font-bold pt-4">
                         Our Company Profile
                     </h2>
-                    <div className="grid grid-cols-2 pt-10 gap-5">
+                    <div className="grid md:grid-cols-2 pt-10 gap-5">
                         <div className="flex items-center gap-2 p-2 rounded bg-white drop-shadow">
                             <img
                                 src="/images/icon/right.png"
@@ -15,7 +15,7 @@ export default function AboutProfile() {
                             />
                             <div>
                                 <p className="text-xl font-bold">
-                                    Company Name{" "}
+                                    Company Name
                                 </p>
                                 <p>
                                     Naahar Industrial Equipments Co. Ltd. (NIECO
@@ -75,7 +75,7 @@ export default function AboutProfile() {
                         </div>
                     </div>
 
-                    <div className="grid grid-cols-2 gap-5 mt-5">
+                    <div className="grid md:grid-cols-2 gap-5 mt-5">
                         <div className="p-4 rounded primary-background text-white drop-shadow ">
                             <h2 className="text-xl font-bold mb-1">
                                 Head Office
@@ -85,11 +85,11 @@ export default function AboutProfile() {
                                 Bashabo, Sabujbag, Dhaka-1214, Bangladesh
                             </p>
                             <p>
-                                <span className="font-bold">Tel :</span>{" "}
+                                <span className="font-bold">Tel :</span>
                                 +8802-4721 7552
                             </p>
                             <p>
-                                <span className="font-bold">Fax :</span>{" "}
+                                <span className="font-bold">Fax :</span>
                                 +8802-4721 9088
                             </p>
                         </div>

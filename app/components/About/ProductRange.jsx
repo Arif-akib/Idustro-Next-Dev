@@ -81,16 +81,34 @@ export default function ProductRange() {
     return (
         <>
             <div className="pt-10 pb-[40px] relative bg-gray-100">
-                <h1 className="text-5xl font-bold w-1/2 text-center mb-5 mx-auto">
+                <h1 className="text-3xl sm:text-4xl xl:text-5xl font-bold xl:w-1/2 text-center mb-5 mx-auto px-[5%]">
                 Our Product Range
                 </h1>
-                <p className="w-1/2 text-center mb-[40px] mx-auto">At NIECO Ltd., we import and supply a diverse range of industrial products designed to meet the specific requirements of various sectors. Our primary offerings include:</p>
-                <div className="px-[10%] relative">
+                <p className="px-[5%] xl:w-1/2 text-center mb-[40px] mx-auto">At NIECO Ltd., we import and supply a diverse range of industrial products designed to meet the specific requirements of various sectors. Our primary offerings include:</p>
+                <div className="px-[5%] xl:px-[10%] relative">
                     <Swiper
-                        slidesPerView={3}
+                        slidesPerView={1}
                         spaceBetween={20}
                         loop={true}
                         modules={[Navigation, Pagination]}
+                        breakpoints={{
+                            640: {
+                                slidesPerView: 1.5,
+                                spaceBetween: 20,
+                            },
+                            1040: {
+                                slidesPerView: 2,
+                                spaceBetween: 20,
+                            },
+                            1280: {
+                                slidesPerView: 2.5,
+                                spaceBetween: 20,
+                            },
+                            1480: {
+                                slidesPerView: 3,
+                                spaceBetween: 20,
+                            },
+                        }}
                         onSwiper={(swiper) => {
                             swiperRef.current = swiper;
                         }}
@@ -245,7 +263,7 @@ export default function ProductRange() {
                         </div>
                     </Swiper>
                 </div>
-                <p className="w-1/2 text-center mx-auto mt-5">Our comprehensive product range ensures that we can meet the unique demands of each industry, delivering solutions that enhance productivity and operational efficiency.</p>
+                <p className="px-[5%] xl:w-1/2 text-center mb-[40px] mx-auto mt-5">Our comprehensive product range ensures that we can meet the unique demands of each industry, delivering solutions that enhance productivity and operational efficiency.</p>
             </div>
         </>
     );

@@ -1,13 +1,13 @@
 export default function BusinessScope() {
   return (
     <>
-      <div className="py-20 pb-26 px-[10%] flex items-center gap-10 bg-[url('/images/background/bg-bottom-portfolio-content.png')] bg-right bg-no-repeat overflow-hidden relative">
+      <div className="py-20 pb-26 px-[5%] xl:px-[10%] flex items-center gap-10 bg-[url('/images/background/bg-bottom-portfolio-content.png')] bg-right bg-no-repeat overflow-hidden relative">
         <img
           src="/images/background/image-holder.png"
           alt=""
           className="absolute top-0 left-0"
         />
-        <div className="w-1/2 relative group">
+        <div className="w-1/2 relative group hidden lg:block">
           <img
             src="/images/About/222-1-500x500.jpg"
             alt=""
@@ -17,17 +17,17 @@ export default function BusinessScope() {
           Business Scope
           </p>
         </div>
-        <div className="w-1/2">
+        <div className="lg:w-1/2">
           <p className="text-xl font-bold">
             Welcome to <span className="primary-color">NIECO Ltd.</span>
           </p>
-          <h2 className="text-5xl font-bold pt-4">
+          <h2 className="text-3xl lg:text-5xl font-bold pt-4">
           Scope of Business
           </h2>
           <p className="text-gray-500 pt-5">
           Naahar Industrial Equipments Co. Ltd. (NIECO Ltd.) operates as a leading local agent, representative, distributor, and service provider across various industrial sectors in Bangladesh. Our expertise spans multiple industries, ensuring that we meet the diverse needs of our clients. The primary areas of focus include:
           </p>
-          <div className="grid grid-cols-2 font-bold text-xl pt-5 gap-x-5 gap-y-3">
+          <div className="grid sm:grid-cols-2 font-bold text-xl pt-5 gap-x-5 gap-y-3">
             <p className="flex items-center gap-2">
               <img
                 src="/images/icon/right.png"
@@ -77,7 +77,7 @@ export default function BusinessScope() {
               Refinery
             </p>
           </div>
-          <div className="my-10 p-8 rounded-md shadow-md bg-white flex items-center gap-5 group">
+          <div className="my-10 p-8 rounded-md shadow-md bg-white flex flex-col sm:flex-row text-center sm:text-start items-center gap-5 group">
             <img
               src="/images/icon/icon-fcb_03.png"
               alt=""

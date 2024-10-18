@@ -60,9 +60,9 @@ export default function AboutTeam() {
     return (
         <>
             <div className="">
-                <div className="flex justify-between items-end pt-[100px] pb-5 px-[10%]">
+                <div className="flex flex-col lg:flex-row justify-between lg:items-end pt-[100px] pb-5 px-[10%]">
                     <div className="relative flex flex-col">
-                        <h1 className="text-5xl font-bold mt-[-70px] z-20">
+                        <h1 className="text-3xl lg:text-5xl font-bold mt-[-70px] z-20">
                         Management Team
                         </h1>
                         <p className="h-[2px] w-[60px] primary-background rounded-md mt-5 z-20"></p>
@@ -121,12 +121,26 @@ export default function AboutTeam() {
                     </div>
                 </div>
 
-                <div className="px-[10%]  relative">
+                <div className="px-[5%] xl:px-[10%]  relative">
                     <Swiper
-                        slidesPerView={4}
+                        slidesPerView={1}
                         spaceBetween={20}
                         loop={true}
                         modules={[Navigation, Pagination]}
+                        breakpoints={{
+                            640: {
+                                slidesPerView: 2,
+                                spaceBetween: 20,
+                            },
+                            1040: {
+                                slidesPerView: 3,
+                                spaceBetween: 20,
+                            },
+                            1280: {
+                                slidesPerView: 4,
+                                spaceBetween: 20,
+                            },
+                        }}
                         onSwiper={(swiper) => {
                             swiperRef.current = swiper;
                         }}

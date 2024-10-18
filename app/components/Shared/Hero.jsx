@@ -5,7 +5,7 @@ export default function Hero({ HeroLable , bread }) {
         <>
             <div className="h-[50vh] bg-[url('/images/home/bg-pagetitle.jpg')] flex flex-col gap-5 justify-center text-white px-[10%]">
                 <BreadCrumb bread={bread} HeroLable={ HeroLable } />
-                <h1 className='text-5xl font-bold'>{HeroLable}</h1>
+                <h1 className='text-3xl lg:text-5xl font-bold'>{HeroLable}</h1>
             </div>
         </>
     )
