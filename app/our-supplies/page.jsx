@@ -103,7 +103,7 @@ export default function Portfolio() {
             <Hero HeroLable={HeroLable} bread={ bread } />  
             <SupplierScope />
             <Partner Headline={Headline} contents={contents} />
-            <div className='pb-20 px-[10%]'>
+            <div className='pb-20 px-[5%] xl:px-[10%]'>
             <SharedContact />
             </div>
             <Stact contents={contents2} />

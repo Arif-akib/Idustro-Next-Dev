@@ -4,21 +4,21 @@ import Link from "next/link";
 export default function TeamGrid({ team }) {
   return (
     <>
-      <div className="px-[10%] py-28">
-        <div className="flex items-end gap-5">
-          <div className="w-1/2">
+      <div className="px-[5%] xl:px-[10%] py-28">
+        <div className="flex flex-col lg:flex-row lg:items-end gap-5">
+          <div className="lg:w-1/2">
             <p className="text-[#203b70] text-lg font-bold mb-2">{team.text}</p>
-            <h3 className="text-5xl font-bold">{team.heading}</h3>
+            <h3 className="text-3xl xl:text-5xl font-bold">{team.heading}</h3>
           </div>
-          <div className="w-1/2">
+          <div className="lg:w-1/2">
             <p className="text-gray-600">{team.sub}</p>
           </div>
         </div>
-        <div className="grid grid-cols-4 gap-5 pt-14">
+        <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-5 pt-14">
           {team.members.map((content, index) => (
             <div
               key={index}
-              className="h-[350px] relative group overflow-hidden"
+              className="md:h-[420px] xl:h-[350px] relative group overflow-hidden"
             >
               <Image
                 src={content.img}
