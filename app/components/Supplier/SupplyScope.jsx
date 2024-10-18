@@ -97,12 +97,12 @@ export default function SupplyScope() {
 
   return (
     <>
-      <div className="py-32 px-[10%] bg-gray-100">
+      <div className="py-32 px-[5%] xl:px-[10%] bg-gray-100">
         <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-10 pb-10">
           {paginatedData.map((content, index) => (
             <div
               key={index}
-                  className="min-h-[350px] w-full overflow-hidden relative group rounded-lg drop-shadow-lg"
+                  className="h-[300px] md:h-[350px] w-full overflow-hidden relative group rounded-lg drop-shadow-lg"
             >
               <Image
                 src={content.bg}
@@ -141,7 +141,7 @@ export default function SupplyScope() {
             className={
               firstIndex <= 0
                 ? "hidden"
-                : "size-[40px] rounded-full primary-background text-white flex justify-center items-center font-bold"
+                : "size-[25px] sm:size-[40px] rounded-full primary-background text-white flex justify-center items-center font-bold"
             }
           >
             <svg
@@ -159,8 +159,8 @@ export default function SupplyScope() {
               key={index}
               className={
                 currentPage == number
-                  ? "size-[40px] rounded-full primary-background text-white flex justify-center items-center font-bold"
-                  : "size-[40px] rounded-full bg-gray-300 flex justify-center items-center font-bold"
+                  ? "size-[25px] sm:size-[40px] rounded-full primary-background text-white flex justify-center items-center font-bold"
+                  : "size-[25px] sm:size-[40px] rounded-full bg-gray-300 flex justify-center items-center font-bold"
               }
             >
               {number}
@@ -172,7 +172,7 @@ export default function SupplyScope() {
             className={
               lastIndex >= contents.length
                 ? "hidden"
-                : "size-[40px] rounded-full primary-background text-white flex justify-center items-center font-bold"
+                : "size-[25px] smsize-[40px] rounded-full primary-background text-white flex justify-center items-center font-bold"
             }
           >
             <svg
