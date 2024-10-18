@@ -13,72 +13,75 @@ import agr from "/public/images/icon/flask1.png";
 
 export default function Career() {
   const HeroLable = "Corporate Social Responsibility";
-    const bread = "Home >> More >> Corporate Social Responsibility";
-    
-    const contents = [
-        {
-          icon: pow,
-          title: "Power & Energy",
-          text: "In parallel with the repair & maintenance of pumps on floating vehicles",
-        },
-        {
-          icon: mac,
-          title: "Mechanical Works",
-          text: "In parallel with the repair & maintenance of pumps on floating vehicles",
-        },
-        {
-          icon: pet,
-          title: "Petroleum Refinery",
-          text: "In parallel with the repair & maintenance of pumps on floating vehicles",
-        },
-        {
-          icon: met,
-          title: "Metal Forming",
-          text: "In parallel with the repair & maintenance of pumps on floating vehicles",
-        },
-        {
-          icon: civ,
-          title: "Civil Engineering",
-          text: "In parallel with the repair & maintenance of pumps on floating vehicles",
-        },
-        {
-          icon: con,
-          title: "Construction Services",
-          text: "In parallel with the repair & maintenance of pumps on floating vehicles",
-        },
-        {
-          icon: wel,
-          title: "Welding & Laser",
-          text: "In parallel with the repair & maintenance of pumps on floating vehicles",
-        },
-        {
-          icon: agr,
-          title: "Agricultural Automation",
-          text: "In parallel with the repair & maintenance of pumps on floating vehicles",
-        },
-    ];
-    
+  const bread = "Home >> More >> Corporate Social Responsibility";
+
+  const contents = [
+    {
+      icon: pow,
+      title: "Power & Energy",
+      text: "In parallel with the repair & maintenance of pumps on floating vehicles",
+    },
+    {
+      icon: mac,
+      title: "Mechanical Works",
+      text: "In parallel with the repair & maintenance of pumps on floating vehicles",
+    },
+    {
+      icon: pet,
+      title: "Petroleum Refinery",
+      text: "In parallel with the repair & maintenance of pumps on floating vehicles",
+    },
+    {
+      icon: met,
+      title: "Metal Forming",
+      text: "In parallel with the repair & maintenance of pumps on floating vehicles",
+    },
+    {
+      icon: civ,
+      title: "Civil Engineering",
+      text: "In parallel with the repair & maintenance of pumps on floating vehicles",
+    },
+    {
+      icon: con,
+      title: "Construction Services",
+      text: "In parallel with the repair & maintenance of pumps on floating vehicles",
+    },
+    {
+      icon: wel,
+      title: "Welding & Laser",
+      text: "In parallel with the repair & maintenance of pumps on floating vehicles",
+    },
+    {
+      icon: agr,
+      title: "Agricultural Automation",
+      text: "In parallel with the repair & maintenance of pumps on floating vehicles",
+    },
+  ];
+
   return (
     <>
       <Home HeroLable={HeroLable} bread={bread} />
-      <div className="py-32 px-[10%]">
-        <h1 className="text-5xl font-bold text-center">
+      <div className="py-32 px-[5%] xl:px-[10%]">
+        <h1 className="text-3xl xl:text-5xl font-bold text-center">
           Our Open Job Position
         </h1>
-        <div className="mt-20 grid grid-cols-4 gap-y-16 gap-x-5">
-                  {contents.map((content, index) => (
-               <div key={index} className="w-full p-5 rounded-md shadow-md flex flex-col items-center justify-center bg-gradient-to-r from-[#1900a8e1] to-[#0061f3ea] group">
-               <div className="size-[80px] p-4 bg-white rounded-full flex items-center justify-center border-[3px] border-[#203b70] -mt-14 group-hover:scale-animate">
-                 <Image src={content.icon} alt="" className=" size-[40px]" />
-               </div>
-               <p className="text-white text-2xl font-bold py-5">
-                 {content.title}
-                          </p>
-                          <p className="text-white pb-5">
-                 {content.text}
-                          </p>
-                          <button className="primary-color bg-white h-[40px] w-[150px] rounded-md shadow-md hover:animate-pulse font-bold">Apply</button>
-             </div>
+        <div className="mt-20 grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-y-16 gap-x-5">
+          {contents.map((content, index) => (
+            <div
+              key={index}
+              className="w-full p-5 rounded-md shadow-md flex flex-col items-center justify-center bg-gradient-to-r from-[#1900a8e1] to-[#0061f3ea] group"
+            >
+              <div className="size-[80px] p-4 bg-white rounded-full flex items-center justify-center border-[3px] border-[#203b70] -mt-14 group-hover:scale-animate">
+                <Image src={content.icon} alt="" className=" size-[40px]" />
+              </div>
+              <p className="text-white text-2xl font-bold py-5">
+                {content.title}
+              </p>
+              <p className="text-white pb-5">{content.text}</p>
+              <button className="primary-color bg-white h-[40px] w-[150px] rounded-md shadow-md hover:animate-pulse font-bold">
+                Apply
+              </button>
+            </div>
           ))}
         </div>
       </div>

@@ -40,7 +40,7 @@ export default function Form() {
             placeholder="Message"
             className="py-2 px-3 w-full h-[120px] bg-gray-50 focus:outline-[1px] outline-orange-600"
           ></textarea>
-          <button className="font-bold text-lg text-white bg-[#203b70] flex gap-3 items-center justify-center h-[50px] w-[200px] rounded-full mx-auto my-5">
+          <button className="font-bold sm:text-lg text-white bg-[#203b70] flex gap-3 items-center justify-center h-[50px] w-[200px] rounded-full mx-auto my-5">
             Send Message +
           </button>
         </div>
