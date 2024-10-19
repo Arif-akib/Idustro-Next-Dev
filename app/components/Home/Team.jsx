@@ -68,13 +68,13 @@ export default function HomeTeam() {
             <div className="pb-16">
                 <div className="flex flex-col lg:flex-row justify-between lg:items-end pt-[100px] pb-5 px-[5%] xl:px-[10%] gap-5">
                     <div className="relative flex flex-col">
-                        <p className="text-[#203b70] text-lg font-bold xl:mb-[-70px] z-20">
+                        <p className="text-[#203b70] text-lg font-bold z-20">
                             Expert team member
                         </p>
                         <h4 className="text-transparent text-4xl md:7xl xl:text-[110px] font-bold font-outline-2 z-10 xl:-ml-16">
                             Team
                         </h4>
-                        <h1 className="text-3xl lg:text-5xl font-bold xl:mt-[-70px] z-20">
+                        <h1 className="text-3xl lg:text-5xl font-bold xl:mt-[-20px] z-20">
                             Our expert team will assist.
                         </h1>
                         <p className="h-[2px] w-[60px] bg-[#203b70] rounded-md mt-5 z-20"></p>

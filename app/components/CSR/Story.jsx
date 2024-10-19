@@ -114,13 +114,13 @@ export default function CsrStory() {
         />
         <div className="flex flex-col lg:flex-row justify-between lg:items-end pt-[100px] pb-5 px-[5%] xl:px-[10%] z-10 relative">
           <div className="relative flex flex-col">
-            <p className="text-[#203b70] text-lg font-bold xl:mb-[-70px] z-20">
+            <p className="text-[#203b70] text-lg font-bold z-20">
               Latest Stories
             </p>
             <h4 className="text-transparent text-4xl md:7xl xl:text-[110px] font-bold font-outline-2 z-10 xl:-ml-16">
             Stories
             </h4>
-            <h1 className="text-5xl font-bold xl:mt-[-70px] z-20">
+            <h1 className="text-5xl font-bold xl:mt-[-20px] z-20">
               Learn something from stories
             </h1>
             <p className="h-[2px] w-[60px] bg-[#203b70] rounded-md mt-5 z-20"></p>

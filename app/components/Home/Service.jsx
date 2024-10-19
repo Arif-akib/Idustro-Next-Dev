@@ -82,13 +82,13 @@ export default function HomeService() {
         <>
             <div className="mt-20 pb-[140px] relative">
                 <div className="flex flex-col items-center justify-center pt-[100px] bg-[url('/images/background/bg-background.jpg')] pb-[200px] px-[5%]">
-                    <p className="text-[#203b70] text-lg font-bold mb-0 xl:mb-[-70px]">
+                    <p className="text-[#203b70] text-lg font-bold relative z-10">
                         Our Awesome Services
                     </p>
-                    <h4 className="text-transparent text-4xl md:7xl xl:text-[110px] font-bold font-outline-2">
+                    <h4 className="text-transparent text-4xl md:7xl text-[110px] font-bold font-outline-2">
                         Services
                     </h4>
-                    <h1 className="text-3xl lg:text-5xl font-bold w-full lg:w-1/2 text-center mt-0 xl:mt-[-70px]">
+                    <h1 className="text-3xl lg:text-5xl font-bold w-full lg:w-1/2 text-center relative z-10 mt-[-20px]">
                         Building a more competitive business sectors
                     </h1>
                     <p className="h-[2px] w-[60px] bg-[#203b70] mt-2 rounded-md"></p>
