@@ -333,7 +333,6 @@ export default function SingleBlog({ params }) {
                         className=""
                       />
                         </div>
-                    
                 ))}
                 
                 </div>

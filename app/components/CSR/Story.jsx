@@ -40,58 +40,24 @@ export default function CsrStory() {
   };
   const contents = [
     {
+      id:1,
       bg: b1,
       type: "industry",
-      heading: "Utilization of Titanimun In Industries",
-      writer: "David parker",
+      heading: "NIECO's support during the flood",
+      writer: "Flood Relief Beneficiary",
       date: "04 Jan 2022",
       date2: "4TH Jan'2022",
-      text: "The Supply from the standard in addition to customized",
+      text: "'NIECO's support during the flood was a lifeline for us. The relief packages we received helped us survive through the hardest times.' – Flood Relief Beneficiary",
     },
     {
+      id:2,
       bg: b2,
       type: "industry",
-      heading: "The Role Of The CNC Machine Operator",
-      writer: "David parker",
+      heading: "Thanks to the scholarship provided by NIECO",
+      writer: "Student from the Education Support Program",
       date: "29 Dec 2021",
       date2: "29TH Dec'2021",
-      text: "The Supply from the standard in addition to customized",
-    },
-    {
-      bg: b3,
-      type: "factory",
-      heading: "The various Industries That Take advantage",
-      writer: "David parker",
-      date: "29 Dec 2021",
-      date2: "29TH Dec'2021",
-      text: "The Supply from the standard in addition to customized",
-    },
-    {
-      bg: b4,
-      type: "factory",
-      heading: "construction Industry Heading Upwrite Using",
-      writer: "David parker",
-      date: "29 Dec 2021",
-      date2: "29TH Dec'2021",
-      text: "The Supply from the standard in addition to customized",
-    },
-    {
-      bg: b5,
-      type: "Construction",
-      heading: "Key headlines for the best pharmaceutical",
-      writer: "David parker",
-      date: "11 Nov 2021",
-      date2: "11TH Nov'2021",
-      text: "The Supply from the standard in addition to customized",
-    },
-    {
-      bg: b6,
-      type: "factory",
-      heading: "Optimise and improve their capabilities",
-      writer: "David parker",
-      date: "11 nov 2021",
-      date2: "11TH Nov'2021",
-      text: "The Supply from the standard in addition to customized",
+      text: "'Thanks to the scholarship provided by NIECO, I am now able to pursue my education and aim for a brighter future.' – Student from the Education Support Program",
     },
   ];
   return (
@@ -113,9 +79,9 @@ export default function CsrStory() {
           className="absolute bottom-0 left-0 size-[180px]"
         />
         <div className="flex flex-col lg:flex-row justify-between lg:items-end pt-[100px] pb-5 px-[5%] xl:px-[10%] z-10 relative">
-          <div className="relative flex flex-col">
+          <div className="relative flex flex-col lg:w-2/3">
             <p className="text-[#203b70] text-lg font-bold z-20">
-              Latest Stories
+              Impact Stories
             </p>
             <h4 className="text-transparent text-4xl md:7xl xl:text-[110px] font-bold font-outline-2 z-10 xl:-ml-16">
             Stories
@@ -124,6 +90,7 @@ export default function CsrStory() {
               Learn something from stories
             </h1>
             <p className="h-[2px] w-[60px] bg-[#203b70] rounded-md mt-5 z-20"></p>
+            <p className="mt-5">Our CSR initiatives have touched many lives, from the flood victims in Bangladesh to young students in rural communities. Here are a few testimonials from those who have benefited from our efforts:</p>
           </div>
           <div className="flex gap-3 items-center justify-center">
             <button onClick={slideLeft} className="hover:primary-color">
