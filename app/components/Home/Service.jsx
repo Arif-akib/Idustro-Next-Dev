@@ -183,7 +183,7 @@ export default function HomeService() {
                                                             ? "h-0 w-0 border-[25px] border-transparent border-t-[#25789e] border-l-[#25789e] absolute top-[90px] right-[-50px]"
                                                             : "" ||
                                                               index % 3 == 1
-                                                            ? "h-0 w-0 border-[25px] border-transparent border-t-[#c2482c] border-l-[#c2482c] absolute top-[90px] right-[-50px]"
+                                                            ? "h-0 w-0 border-[25px] border-transparent border-t-[#201553] border-l-[#201553] absolute top-[90px] right-[-50px]"
                                                             : "" ||
                                                               index % 3 == 2
                                                             ? "h-0 w-0 border-[25px] border-transparent border-t-[#3b9422] border-l-[#3b9422] absolute top-[90px] right-[-50px]"

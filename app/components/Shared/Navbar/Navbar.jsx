@@ -64,6 +64,11 @@ export default function Navbar() {
                                 <ul className="group relative h-full flex items-center">
                                     <p>More</p>
                                     <ul className="absolute top-[65px] right-[-150%] hidden group-hover:flex bg-white px-5 py-3 text-black w-[250px] rounded-md drop-shadow-sm flex-col gap-2">
+                                    <Link href="/more/project-list">
+                                            <li className="hover:primary-color">
+                                                Project List
+                                            </li>
+                                        </Link>
                                         <Link href="/more/corporate-social-responsibility">
                                             <li className="hover:primary-color">
                                                 Corporate Social Reponsibility
