@@ -10,9 +10,13 @@ export default function Navbar() {
                     <NavAdd />
                     <NavBarContact />
                     <div className="absolute w-full xl:w-[75%] xl:bottom-[-50px] right-0 bg-white px-[5%] xl:px-0 py-2 lg:py-0 flex justify-between items-center">
-                        <img src="/images/logo/logo.png" alt="" className="h-[65px] xl:hidden"/>
+                        <img
+                            src="/images/logo/logo.png"
+                            alt=""
+                            className="h-[65px] xl:hidden"
+                        />
                         <div className="bg-white xl:bg-[#203b70] h-[85px] xl:text-white hidden lg:flex items-center justify-between gap-5 xl:w-full xl:pr-[15%] relative">
-                            <ul className="flex text-[17px] gap-5 font-semibold items-center justify-center h-full">
+                            <ul className="flex text-[17px] gap-10 font-semibold items-center justify-center h-full">
                                 <Link href="/">
                                     <li>Home</li>
                                 </Link>
@@ -64,14 +68,14 @@ export default function Navbar() {
                                 <ul className="group relative h-full flex items-center">
                                     <p>More</p>
                                     <ul className="absolute top-[65px] right-[-150%] hidden group-hover:flex bg-white px-5 py-3 text-black w-[250px] rounded-md drop-shadow-sm flex-col gap-2">
-                                    <Link href="/more/project-list">
+                                        <Link href="/more/project-list">
                                             <li className="hover:primary-color">
                                                 Project List
                                             </li>
                                         </Link>
                                         <Link href="/more/corporate-social-responsibility">
                                             <li className="hover:primary-color">
-                                                Corporate Social Reponsibility
+                                                Corporate Social Responsibility
                                             </li>
                                         </Link>
                                         <Link href="/more/submit-a-complaint">
@@ -99,7 +103,15 @@ export default function Navbar() {
                             <div className="hidden xl:block h-0 w-0 border-[42.5px] border-transparent border-r-[#203b70] border-b-[#203b70] absolute translate-x-[-100%]"></div>
                         </div>
                         <span className="lg:hidden">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36" fill="rgba(17,28,127,1)"><path d="M3 4H21V6H3V4ZM3 11H21V13H3V11ZM3 18H21V20H3V18Z"></path></svg>
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                width="36"
+                                height="36"
+                                fill="rgba(17,28,127,1)"
+                            >
+                                <path d="M3 4H21V6H3V4ZM3 11H21V13H3V11ZM3 18H21V20H3V18Z"></path>
+                            </svg>
                         </span>
                     </div>
                 </div>
