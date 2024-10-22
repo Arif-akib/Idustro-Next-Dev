@@ -5,10 +5,12 @@ import { useEffect , useState } from "react";
 
 import NavAdd from "./NavAdd";
 import NavBarContact from "./NavbarContact";
+import DropMenu from "/app/components/Shared/Navbar/DropMenu"
 
 export default function Navbar() {
     
     const [scrolled, setScrolled] = useState(false);
+    const [dropDown , setDropDown ] = useState(false)
 
   // Handle scroll event
   const handleScroll = () => {
@@ -18,7 +20,16 @@ export default function Navbar() {
     } else {
       setScrolled(false);
     }
-  };
+    };
+    
+    const dropMenu = () => {
+        if (dropDown == false) {
+            setDropDown(true)
+        }
+        if (dropDown == true) {
+            setDropDown(false)
+        } 
+    }
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
@@ -32,7 +43,7 @@ export default function Navbar() {
     return (
         <>
             <div className="sticky w-full top-0 z-50">
-                <div className="relative">
+                <div className="relative z-50">
                     <NavAdd scrolled={ scrolled} />
                     <NavBarContact scrolled={ scrolled}/>
                     <div className={scrolled == false ? "absolute w-full xl:w-[75%] xl:bottom-[-50px] right-0 bg-white px-[5%] xl:px-0 py-2 lg:py-0 flex justify-between items-center" :"absolute w-full right-0 bg-white px-[5%] xl:px-[10%] py-2 flex justify-between items-center shadow-md"}>
@@ -119,7 +130,7 @@ export default function Navbar() {
                             </ul>
                             <div className={scrolled == false ? "hidden xl:block h-0 w-0 border-[42.5px] border-transparent border-r-[#203b70] border-b-[#203b70] absolute translate-x-[-100%]" : "hidden"}></div>
                         </div>
-                        <span className="lg:hidden">
+                        <span className="lg:hidden" onClick={dropMenu}>
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 24 24"
@@ -132,6 +143,7 @@ export default function Navbar() {
                         </span>
                     </div>
                 </div>
+                <DropMenu dropDown={ dropDown} />
             </div>
         </>
     );
