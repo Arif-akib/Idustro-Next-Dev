@@ -1,7 +1,7 @@
-export default function NavAdd() {
+export default function NavAdd({scrolled}) {
   return (
     <>
-      <div className="bg-black text-gray-400 px-[10%] h-[55px] xl:flex justify-between items-center hidden">
+      <div className={scrolled==false ? "bg-black text-gray-400 px-[10%] h-[55px] xl:flex justify-between items-center hidden" : "bg-black text-gray-400 px-[10%] h-[55px] justify-between items-center hidden"}>
         <p className="">
           Welcome to our <span className="text-[#3670e6]">NIECO</span> Company
         </p>
@@ -17,7 +17,7 @@ export default function NavAdd() {
             >
               <path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM13 12V7H11V14H17V12H13Z"></path>
             </svg>
-            We'are Open : Sat - Thu 9 PM - 5 PM
+            We'are Open : Sat - Thu 9 AM - 5 PM
           </p>
           <p className="h-[55px] w-[1px] bg-gray-500 rotate-[30deg]"></p>
           <div className="flex items-center gap-4 text-lg">

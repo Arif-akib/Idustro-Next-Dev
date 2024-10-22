@@ -4,8 +4,8 @@ import "swiper/css";
 import { Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-import bg2 from "/public/images/background/vt-7.png";
-import bg1 from "/public/images/background/vt-8.png";
+import bg1 from "/public/images/background/vt-2.png";
+import bg2 from "/public/images/background/ite-vector-left.png";
 
 import gas from "/public/images/icon/dispenser.png";
 import gas2 from "/public/images/icon/dispenser1.png";
@@ -89,7 +89,7 @@ export default function BannerGrid() {
                       />
                     </div>
                   </div>
-                  <div className="absolute z-10 top-0 w-full rounded-md overflow-hidden h-0 group-hover:h-[500px] ease-in-out duration-700 bg-center bg-[url('/images/home/bg-slide-home-1.jpg')]">
+                  <div className="absolute z-10 top-0 w-full rounded-md overflow-hidden h-0 group-hover:h-[500px] ease-in-out duration-700 bg-center bg-[url('/images/home/homehero1.jpg')]">
                     <div className="p-10 rounded-md w-full h-[550px] backdrop-blur-md relative translate-y-[-100%] group-hover:translate-y-0 duration-500 ease-in-out">
                       <Image
                         src={content.icon2}

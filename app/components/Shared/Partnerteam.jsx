@@ -22,6 +22,8 @@ export default function TeamGrid({ team }) {
             >
               <Image
                 src={content.img}
+                width={600}
+                height={600}
                 alt=""
                 className="size-full object-cover aspect-auto"
               />

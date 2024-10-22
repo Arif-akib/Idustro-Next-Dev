@@ -24,48 +24,56 @@ export default function Home() {
                 title: "Project Showcase",
                 text: "City of Calgary LRT Station Refurbishment",
                 subtext: "ALBERTA",
+                url:"/more/project-list"
             },
             {
                 img: indus,
                 title: "Product Gallery",
                 text: "House Building Wind Energy Plant",
                 subtext: "ALBERTA",
+                url:""
             },
             {
                 img: arch,
                 title: "Client Testimonials",
                 text: "Muchen Railway Station",
                 subtext: "ALBERTA",
+                url:""
             },
             {
                 img: cons,
                 title: "Service Highlights",
                 text: "Pipe and Pressure Vessel System",
                 subtext: "Machanical Engineering",
+                url:"/our-service/our-services"
             },
             {
                 img: inte,
                 title: "Certifications and Partnerships",
                 text: "Capturing Manila",
                 subtext: "Agriculture Automation",
+                url:"/achievements-&-awards/from-manufacturers"
             },
             {
                 img: eng,
                 title: "Awards and Recognition",
                 text: "Polley Theater",
                 subtext: "Agriculture Automation",
+                url:"/achievements-&-awards/from-end-user"
             },
             {
                 img: eng,
                 title: "Industry Events and Participation",
                 text: "Polley Theater",
                 subtext: "Agriculture Automation",
+                url:""
             },
             {
                 img: eng,
                 title: "News and Updates",
                 text: "Polley Theater",
                 subtext: "Agriculture Automation",
+                url:"/blog"
             },
         ],
     };

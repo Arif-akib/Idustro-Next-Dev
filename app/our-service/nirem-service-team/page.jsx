@@ -19,47 +19,37 @@ export default function Team() {
         text: 'Our Team',
         sub:'Our team of engineers and technicians are professionally trained by the Firm. In parallel with the repair & maintenance of pumps on floating vehicles, we are truly reliable pump doctors.',
         members : [
-            {
-              img: p1,
-              heading: "Amy Dasliva",
-              text: "Electrical Engineer",
-            },
-            {
-              img: p2,
-              heading: "KP. Jackson",
-              text: "Electrical Engineer",
-            },
-        
-            {
-              img: p4,
-              heading: "Rob Miller",
-              text: "Electrical Engineer",
-            },
-            {
-              img: p6,
-              heading: "Alfread Bonaport",
-              text: "Electrical Engineer",
-            },
-            {
-              img: p5,
-              heading: "Ashisha Sudra",
-              text: "Marketing",
-            },
-            {
-              img: p3,
-              heading: "R. Atterberry",
-              text: "Electrical Engineer",
-            },
-            {
-                img: p7,
-                heading: "R. Faulkner",
-                text: "Industrial Manager",
-              },
-              {
-                img: p8,
-                heading: "Rudolph Spitler",
-                text: "Engineer",
-              },
+          {
+            img: "/images/team/saiful-islam.jpg",
+            heading: "Saiful Islam",
+            text: "Chairman",
+        },
+        {
+            img: "/images/team/abdulla-muzahid.jpg",
+            heading: "Abdulla Muzahid",
+            text: "Director",
+        },
+        {
+            img: "/images/team/faisal-kabir.jpg",
+            heading: "Faisal Kabir",
+            text: "Managing Director",
+        },
+        {
+            img: "/images/team/abdullah-munir.jpg",
+            heading: "Abdullah Al Munir",
+            text: "Mechanical Engineer",
+        },
+        {
+            img: "/images/team/kamrul-islam.jpg",
+            heading: "Kamrul Islam",
+            text: "Electrical Engineer",
+        },
+
+        {
+            img: "/images/team/shakib-sarker.jpg",
+            heading: "Md. Sakib Sarker",
+            text: "Civil Engineer",
+        },
           ]
     }
     

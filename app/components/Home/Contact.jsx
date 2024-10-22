@@ -2,6 +2,7 @@ import Image from "next/image";
 
 import logo from "/public/images/logo/logo.png"
 import bg1 from "/public/images/background/vt-2.png"
+import bg2 from "/public/images/background/ite-vector-left.png"
 
 export default function HomeContact() {
   return (
@@ -14,7 +15,7 @@ export default function HomeContact() {
             className="absolute right-0 top-0 bg-animate1 z-0 hidden lg:block"
           />
           <Image
-            src={bg1}
+            src={bg2}
             alt=""
             className="absolute left-0 bottom-0 size-[350px] bg-animate1 z-0 hidden lg:block"
           />

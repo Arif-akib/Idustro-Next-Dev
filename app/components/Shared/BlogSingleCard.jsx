@@ -59,7 +59,7 @@ export default function BlogSingleCard({ content }) {
                                 {content.date2}
                             </p>
                         </div>
-                        <div className="h-0 w-0 border-[25px] border-transparent border-t-[#c2482c] border-l-[#c2482c] absolute top-[90px] right-[-50px]"></div>
+                        <div className="h-0 w-0 border-[25px] border-transparent border-t-[#171147] border-l-[#171147] absolute top-[90px] right-[-50px]"></div>
                         <p className="text-3xl font-bold line-clamp-2">{content.heading}</p>
                         <p className="line-clamp-2 text-lg">{content.text}</p>
                         <Link href={`/blog/${content.id}`}>

@@ -2,8 +2,8 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 
 import BannerGrid from "/app/components/Home/BannerGrid";
-import img1 from "/public/images/home/bg-slide-home-1.jpg";
-import img2 from "/public/images/home/slide-1-2.jpg";
+import img1 from "/public/images/home/homehero1.jpg";
+import img2 from "/public/images/home/homehero2.jpg";
 
 export default function Hero() {
     const [currentIndex, setCurrentIndex] = useState(0);

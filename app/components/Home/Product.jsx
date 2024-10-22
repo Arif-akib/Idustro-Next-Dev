@@ -111,7 +111,7 @@ export default function HomeProduct() {
                         className="absolute top-0 left-[13%] z-0"
                     />
                     <Image
-                        src="/images/background/vt-2.png"
+                        src="/images/background/ite-vector-left.png"
                         alt="Nahar industrial Services"
                         width={500}
                         height={500}
@@ -164,20 +164,20 @@ export default function HomeProduct() {
 
                                         <div className="relative w-full">
                                             <div className="text-center bg-white px-5 rounded-xl pt-[80px] shadow-lg relative overflow-hidden">
-                                                <h2 className="capitalize font-bold text-2xl line-clamp-2 pb-2">
+                                                <h2 className="capitalize font-bold text-2xl line-clamp-2 pb-8">
                                                     {content.heading}
                                                 </h2>
-                                                <p className="capitalize text-gray-500 text-lg pb-8 border-b line-clamp-1">
+                                                {/* <p className="capitalize text-gray-500 text-lg pb-8 border-b line-clamp-1">
                                                     {content.subtext}
-                                                </p>
+                                                </p> */}
 
                                                 <div className="text-center bg-black text-white px-5 rounded-xl pt-[80px] shadow-lg absolute top-0 left-0 translate-y-[105%] group-hover:translate-y-0 duration-300 w-full">
-                                                    <h2 className="capitalize font-bold text-2xl line-clamp-2 pb-2">
+                                                    <h2 className="capitalize font-bold text-2xl line-clamp-2 pb-8">
                                                         {content.heading}
                                                     </h2>
-                                                    <p className="capitalize text-gray-500 text-lg pb-8 border-b line-clamp-1">
+                                                    {/* <p className="capitalize text-gray-500 text-lg pb-8 border-b line-clamp-1">
                                                         {content.subtext}
-                                                    </p>
+                                                    </p> */}
                                                 </div>
                                             </div>
                                         </div>

@@ -1,10 +1,10 @@
 import Image from "next/image";
 
 import logo from "/public/images/logo/logo.png";
-export default function NavBarContact() {
+export default function NavBarContact({scrolled}) {
     return (
         <>
-            <div className="px-[10%] hidden xl:flex pt-3 justify-between bg-white">
+            <div className={scrolled==false ? "px-[10%] hidden xl:flex pt-3 justify-between bg-white" : "px-[10%] hidden pt-3 justify-between bg-white"}>
                 <Image src={logo} alt="" className="h-[70px] w-auto my-3" />
                 <div className="flex gap-10">
                     <div className="flex gap-5">

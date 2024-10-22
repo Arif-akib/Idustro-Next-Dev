@@ -85,7 +85,7 @@ export default function Footer() {
                                 <span className="pb-1 border-b font-bold text-lg text-white">
                                     We&apos;are Open
                                 </span>
-                                <p>Sat - Thu 9 PM - 5 PM</p>
+                                <p>Sat - Thu 9 AM - 5 PM</p>
                             </div>
                         </div>
                     </div>
