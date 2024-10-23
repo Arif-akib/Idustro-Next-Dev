@@ -1,58 +1,74 @@
-'use client'
+"use client";
 
 import Link from "next/link";
-import { useEffect , useState } from "react";
+import { useEffect, useState } from "react";
 
+import Image from "next/image";
 import NavAdd from "./NavAdd";
 import NavBarContact from "./NavbarContact";
-import DropMenu from "/app/components/Shared/Navbar/DropMenu"
+import DropMenu from "/app/components/Shared/Navbar/DropMenu";
 
 export default function Navbar() {
-    
     const [scrolled, setScrolled] = useState(false);
-    const [dropDown , setDropDown ] = useState(false)
+    const [dropDown, setDropDown] = useState(false);
 
-  // Handle scroll event
-  const handleScroll = () => {
-    const offset = window.scrollY;
-    if (offset > 0) {
-      setScrolled(true);
-    } else {
-      setScrolled(false);
-    }
+    // Handle scroll event
+    const handleScroll = () => {
+        const offset = window.scrollY;
+        if (offset > 0) {
+            setScrolled(true);
+        } else {
+            setScrolled(false);
+        }
     };
-    
+
     const dropMenu = () => {
         if (dropDown == false) {
-            setDropDown(true)
+            setDropDown(true);
         }
         if (dropDown == true) {
-            setDropDown(false)
-        } 
-    }
-
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
+            setDropDown(false);
+        }
     };
-  }, []);
 
-
+    useEffect(() => {
+        window.addEventListener("scroll", handleScroll);
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
 
     return (
         <>
             <div className="sticky w-full top-0 z-50">
                 <div className="relative z-50">
-                    <NavAdd scrolled={ scrolled} />
-                    <NavBarContact scrolled={ scrolled}/>
-                    <div className={scrolled == false ? "absolute w-full xl:w-[75%] xl:bottom-[-50px] right-0 bg-white px-[5%] xl:px-0 py-2 lg:py-0 flex justify-between items-center" :"absolute w-full right-0 bg-white px-[5%] xl:px-[10%] py-2 flex justify-between items-center shadow-md"}>
-                        <img
+                    <NavAdd scrolled={scrolled} />
+                    <NavBarContact scrolled={scrolled} />
+                    <div
+                        className={
+                            scrolled == false
+                                ? "absolute w-full xl:w-[75%] xl:bottom-[-50px] right-0 bg-white px-[5%] xl:px-0 py-2 lg:py-0 flex justify-between items-center"
+                                : "absolute w-full right-0 bg-white px-[5%] xl:px-[10%] py-2 flex justify-between items-center shadow-md"
+                        }
+                    >
+                        <Image
                             src="/images/logo/logo.png"
-                            alt=""
-                            className={scrolled == false ? "h-[65px] xl:hidden" : "h-[65px]"}
+                            alt="Nahar Industries Logo"
+                            width={800}
+                            height={500}
+                            className={
+                                scrolled == false
+                                    ? "h-[65px] xl:hidden"
+                                    : "h-[75px] w-[220px]"
+                            }
                         />
-                        <div className={scrolled == false ? "bg-white xl:bg-[#203b70] h-[85px] xl:text-white hidden lg:flex items-center justify-between gap-5 xl:w-full xl:pr-[15%] relative" : "bg-white h-[85px] hidden lg:flex items-center justify-between gap-5 relative"}>
+                        <div
+                            className={
+                                scrolled == false
+                                    ? "bg-white xl:bg-[#203b70] h-[85px] xl:text-white hidden lg:flex items-center justify-between gap-5 xl:w-full xl:pr-[15%] relative"
+                                    : "bg-white h-[85px] hidden lg:flex items-center justify-between gap-5 relative"
+                            }
+                        >
                             <ul className="flex text-[17px] gap-10 font-semibold items-center justify-center h-full">
                                 <Link href="/">
                                     <li>Home</li>
@@ -85,12 +101,12 @@ export default function Navbar() {
                                 <ul className="group relative h-full flex items-center">
                                     <p>Achievements & Awards</p>
                                     <ul className="absolute top-[65px] hidden group-hover:flex bg-white px-5 py-3 text-black w-[250px] rounded-md drop-shadow-sm flex-col gap-2">
-                                        <Link href="/achievements-&-awards/from-manufacturers">
+                                        <Link href="/achievements-and-awards/from-manufacturers">
                                             <li className="hover:primary-color">
                                                 From Manufacturers
                                             </li>
                                         </Link>
-                                        <Link href="/achievements-&-awards/from-end-user">
+                                        <Link href="/achievements-and-awards/from-end-user">
                                             <li className="hover:primary-color">
                                                 From End user
                                             </li>
@@ -128,7 +144,13 @@ export default function Navbar() {
                                     </ul>
                                 </ul>
                             </ul>
-                            <div className={scrolled == false ? "hidden xl:block h-0 w-0 border-[42.5px] border-transparent border-r-[#203b70] border-b-[#203b70] absolute translate-x-[-100%]" : "hidden"}></div>
+                            <div
+                                className={
+                                    scrolled == false
+                                        ? "hidden xl:block h-0 w-0 border-[42.5px] border-transparent border-r-[#203b70] border-b-[#203b70] absolute translate-x-[-100%]"
+                                        : "hidden"
+                                }
+                            ></div>
                         </div>
                         <span className="lg:hidden" onClick={dropMenu}>
                             <svg
@@ -143,7 +165,7 @@ export default function Navbar() {
                         </span>
                     </div>
                 </div>
-                <DropMenu dropDown={ dropDown} />
+                <DropMenu dropDown={dropDown} />
             </div>
         </>
     );

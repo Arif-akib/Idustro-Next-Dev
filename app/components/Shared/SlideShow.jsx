@@ -1,10 +1,12 @@
+"use client";
+
 import Image from "next/image";
 
 import bg1 from "/public/images/icon/image-cile.png";
 import bg2 from "/public/images/icon/play.png";
 
-import { useEffect, useState } from "react";
 import Link from "next/link";
+import { useState } from "react";
 
 export default function SlideShow({ portfolio }) {
     const contents = portfolio.contents;
@@ -64,16 +66,16 @@ export default function SlideShow({ portfolio }) {
                                         </p> */}
                                     </div>
                                     <div className="absolute z-10 primary-background h-[70px] w-[60px] bottom-0 right-0 text-white hover:animate-pulse flex items-center justify-center">
-                                        <Link href={content.url}>
-                                        <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            viewBox="0 0 24 24"
-                                            width="26"
-                                            height="26"
-                                            fill="currentColor"
-                                        >
-                                            <path d="M12 13H4V11H12V4L20 12L12 20V13Z"></path>
-                                        </svg>
+                                        <Link href={content.url || ""}>
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 24 24"
+                                                width="26"
+                                                height="26"
+                                                fill="currentColor"
+                                            >
+                                                <path d="M12 13H4V11H12V4L20 12L12 20V13Z"></path>
+                                            </svg>
                                         </Link>
                                     </div>
                                 </div>
@@ -81,9 +83,11 @@ export default function SlideShow({ portfolio }) {
                         </div>
                     ))}
                 </div>
-                <div className="md:w-[35%] md:mt-[-65px] lg:-ml-20">
-                    <div className="bg-gray-300 text-black h-[770px] xl:h-[700px]  pt-[60px] pl-10 lg:pl-[120px] pr-[40px] hidden md:block">
-                        <h1 className="text-3xl lg:text-5xl font-bold">{heading}</h1>
+                <div className="md:w-[35%] md:mt-[-35px] lg:-ml-20">
+                    <div className="bg-gray-300 text-black h-[770px] xl:h-[620px]  pt-[60px] pl-10 lg:pl-[120px] pr-[40px] hidden md:block">
+                        <h1 className="text-3xl lg:text-5xl font-bold">
+                            {heading}
+                        </h1>
                         <div className="py-6 flex flex-col gap-4 mt-4 relative">
                             {contents.map((content, index) => (
                                 <div

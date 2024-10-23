@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <body>
+            <body className="overflow-x-hidden scroll-smooth">
                 <Navbar />
                 <div className="w-[100vw-8px] overflow-hidden">{children}</div>
                 <Footer />

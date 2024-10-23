@@ -64,11 +64,11 @@ export default function HomeBlog() {
             id:3,
             bg: "/images/blog/flood.jpg",
             type: "donation",
-            heading: "বন্যাপীড়িত এলাকা সফর",
+            heading: "Visit to Flood-Affected Areas of Fatikchhari",
             writer: "David parker",
             date: "30th Aug 2024",
             date2: "30th Aug 2024",
-            text: "NIREM Service Team , কালিকাপুর ক্লাব, Anhui Bring I&E Co., China ও বিভিন্ন প্রকৌশলীর যৌথ উদ্যোগে আজ ফটিকছড়ির বন্যাপীড়িত এলাকা সফর করে সেখানের মানুষের মাঝে আমাদের উপহার বিতরণ করেছি। এই বিপর্যয়ের সময়ে তাদের মুখে একটু হাসি ফোটানোই আমাদের লক্ষ্য ছিল। উপহার প্রস্তুত ও বিতরণে যারা প্রাণপণ পরিশ্রম করেছেন, তাদের প্রতি আমাদের অন্তরস্থল থেকে গভীর কৃতজ্ঞতা জ্ঞাপন করছি। আপনারা সত্যিই অসাধারণ",
+            text: "On August 30th, the NIREM Service Team, in collaboration with Kalikapur Club, Anhui Bring I&E Co., China, and several engineers, visited the flood-affected areas of Fatikchhari. During this visit, we distributed relief items to the local people as a token of our support. Our primary goal was to bring a little joy to their faces amidst this disaster. We extend our deepest gratitude to all those who worked tirelessly in preparing and distributing the relief. Your efforts were truly remarkable!",
         },
         {
             id:4,
